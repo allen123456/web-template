@@ -1,18 +1,22 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <div @click="handleClick">adfasdf</div>
+    <router-link to="/about">about</router-link>
+    <zv-svg-icon icon-class="loading" />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import * as api from '@/api/test'
 
 export default {
-  name: "home",
-  components: {
-    HelloWorld
+  name: 'home',
+  methods: {
+    handleClick() {
+      api.test(data => {
+        alert(data)
+      })
+    }
   }
-};
+}
 </script>
