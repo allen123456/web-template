@@ -5,6 +5,7 @@ import router from './router'
 import store from './store'
 import './icons'
 import './utils/permission'
+import './utils/errorLog'
 
 // 通过 npm run mock 启用mock数据
 if (process.env.NODE_ENV === 'mock') {

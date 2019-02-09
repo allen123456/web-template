@@ -1,8 +1,8 @@
 <template>
   <div class="home">
-    <div @click="handleClick">adfasdf</div>
+    <div @click="handleClick">测试页</div>
     <router-link to="/about">about</router-link>
-    <zv-svg-icon icon-class="loading" />
+    <zv-svg-icon icon-class="loadings" />
   </div>
 </template>
 

@@ -5,8 +5,11 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit"
+    "debugger": "vue-cli-service serve --mode debugger",
+    "mock": "vue-cli-service serve --mode mock",
+    "lint": "vue-cli-service lint --fix --ext .js,.vue src",
+    "test:unit": "vue-cli-service test:unit",
+    "analyze": "vue-cli-service build --report"
   },
   "dependencies": {
     "axios": "^0.18.0",
