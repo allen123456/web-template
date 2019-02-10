@@ -61,7 +61,10 @@
       }
     }
 
-
+###依赖
+ .img-2  https://github.com/RevillWeb/img-2
+ .vue-create-api  https://github.com/cube-ui/vue-create-api/blob/master/README_zh-CN.md
+ .lozad  https://github.com/ApoorvSaxena/lozad.js
 
 ## Project setup
 ```

@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import 'normalize.css/normalize.css'
+import CreateAPI from 'vue-create-api'
 import App from './App.vue'
 import router from './router'
 import store from './store'
@@ -11,6 +12,11 @@ import './utils/errorLog'
 if (process.env.NODE_ENV === 'mock') {
   require('./mock')
 }
+
+Vue.use(CreateAPI, {
+  componentPrefix: 'zv-',
+  apiPrefix: '$create-'
+})
 
 Vue.config.productionTip = false
 
