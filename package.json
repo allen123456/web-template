@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --modern",
+    "build": "vue-cli-service build",
     "debugger": "vue-cli-service serve --mode debugger",
     "mock": "vue-cli-service serve --mode mock",
     "lint": "vue-cli-service lint --fix --ext .js,.vue src",

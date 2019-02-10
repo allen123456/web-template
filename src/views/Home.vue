@@ -1,22 +1,26 @@
 <template>
   <div class="home">
-    <div @click="handleClick">测试页</div>
-    <router-link to="/about">about</router-link>
-    <zv-svg-icon icon-class="loadings" />
-    <van-button type="default">默认按钮</van-button>
+    <zv-nav-bar :prop="navBarData"></zv-nav-bar>
+    <zv-list>
+      <zv-cell v-for="(item, index) in list" :key="index" :prop="item"></zv-cell>
+    </zv-list>
   </div>
 </template>
 
 <script>
-import * as api from '@/api/test'
+import ZvNavBar from '../components/zv-nav-bar/index'
+import ZvList from '../components/zv-list/index'
+import ZvCell from '../components/zv-cell/index'
 
 export default {
   name: 'home',
-  methods: {
-    handleClick() {
-      api.test(data => {
-        alert(data)
-      })
+  components: { ZvCell, ZvList, ZvNavBar },
+  data() {
+    return {
+      navBarData: {
+        title: '示例'
+      },
+      list: [{ title: '按钮', isLink: true, url: 'button' }]
     }
   }
 }

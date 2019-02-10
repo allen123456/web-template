@@ -20,12 +20,12 @@ const externals = {
 const cdn = {
   // 开发环境
   dev: {
-    css: ['//cdn.jsdelivr.net/npm/vant@1.6.1/lib/index.css'],
+    css: [],
     js: []
   },
   // 生产环境
   build: {
-    css: ['//cdn.jsdelivr.net/npm/vant@1.6.1/lib/index.css'],
+    css: [],
     js: [
       '//cdn.jsdelivr.net/npm/vue@2.6.4/dist/vue.min.js',
       '//cdn.jsdelivr.net/npm/vue-router@3.0.1/dist/vue-router.min.js',
