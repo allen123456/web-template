@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import 'normalize.css/normalize.css'
 import CreateAPI from 'vue-create-api'
+import Vant from 'vant'
+// import 'vant/lib/index.css'
 import App from './App.vue'
 import router from './router'
 import store from './store'
@@ -17,6 +19,8 @@ Vue.use(CreateAPI, {
   componentPrefix: 'zv-',
   apiPrefix: '$create-'
 })
+
+Vue.use(Vant)
 
 Vue.config.productionTip = false
 
