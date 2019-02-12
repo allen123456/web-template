@@ -10,6 +10,7 @@ export function random_str(len = 32) {
   return str
 }
 
+// 深拷贝
 function typeOf(obj) {
   const toString = Object.prototype.toString
   const map = {
@@ -51,6 +52,7 @@ export function deepCopy(data) {
   return o
 }
 
+// 金额后面添0（0 => 0.00）
 export function parseMoney(s, n) {
   if (!s) return 0
   n = n > 0 && n <= 20 ? n : 2
@@ -121,5 +123,16 @@ export function substringLast(str, len) {
     }
   } else {
     return ''
+  }
+}
+
+// 缓存计算结果，第二次调用的时候直接读取缓存中的内容
+export function cached(fn){
+  const cache = Object.create(null)
+  return function cachedFn (str) {
+    if ( !cache[str] ) {
+      cache[str] = fn(str)
+    }
+    return cache[str]
   }
 }

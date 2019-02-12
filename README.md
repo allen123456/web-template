@@ -4,7 +4,13 @@
 ###文件作用：
  mock：配置假数据
  router: 配置页面路由
- src/permission: 页面权限控制
+ icons: svg相关
+ utils
+   -permission: 页面权限控制
+   -request: 请求相关
+   -errorLog: 错误日志
+   -assist: 自定义组件相关方法
+   -index: 基本工具方法
  components/global 全局组件文件夹（index.js中会自动加载global下的所有组件）
  .env.mock: 设置mock环境下，所要的全局属性（定义模拟数据）
  .env.debugger: 设置debugger环境下，所要的全局属性(用于局域网中调试。若后端是微服务，配合debugger.port.js。)
@@ -18,6 +24,7 @@
     * @Desc: 描述
     */
  .代码规则与风格：eslint+prettier
+ .移动端基于vw适配
 
 ###请求
  .默认每次请求都会加载请求动画，若是某些接口不需要加载动画，在请求参数中添加isHideLoading，且设置为true
@@ -46,7 +53,6 @@
  .异步组件 export default { components: { HellowWorld: () => import('../components/HelloWorld.vue') } }
  .除非组件1.有预渲染需求；2.需要频繁切换显示状态，否则使用v-if代替v-show
  .引入 compression-webpack-plugin, vue.config.js中开起gzip，Nginx中开启gzip
- .npm run build --report 查看包体积
  .对于多次会用到的逻辑，使用mixin封装，例如：多个地方用到相同的请求
    userinfo-mixin.js:
     import * as api from '@/api/test'
@@ -60,11 +66,11 @@
         }
       }
     }
+ .使用svgo优化svg
 
 ###依赖
- .img-2  https://github.com/RevillWeb/img-2
  .vue-create-api  https://github.com/cube-ui/vue-create-api/blob/master/README_zh-CN.md
- .lozad  https://github.com/ApoorvSaxena/lozad.js
+ .crypto-js  https://github.com/ApoorvSaxena/lozad.js
 
 ## Project setup
 ```
