@@ -22,6 +22,7 @@
     "postcss-px-to-viewport": "^1.1.0",
     "postcss-write-svg": "^3.0.1",
     "vant": "^1.6.1",
+    "vconsole": "^3.3.0",
     "vue": "^2.6.4",
     "vue-create-api": "^0.2.0",
     "vue-router": "^3.0.1",

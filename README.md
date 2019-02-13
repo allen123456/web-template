@@ -69,8 +69,9 @@
  .使用svgo优化svg
 
 ###依赖
- .vue-create-api  https://github.com/cube-ui/vue-create-api/blob/master/README_zh-CN.md
- .crypto-js  https://github.com/ApoorvSaxena/lozad.js
+ .vue-create-api  https://github.com/cube-ui/vue-create-api
+ .crypto-js       https://github.com/brix/crypto-js
+ .vconsole        https://github.com/Tencent/vConsole
 
 ## Project setup
 ```

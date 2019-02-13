@@ -15,6 +15,11 @@ if (process.env.NODE_ENV === 'mock') {
   require('./mock')
 }
 
+if (process.env.NODE_ENV !== 'production') {
+  let VConsole = require('vconsole/dist/vconsole.min')
+  new VConsole()
+}
+
 Vue.use(CreateAPI, {
   componentPrefix: 'zv-',
   apiPrefix: '$create-'
