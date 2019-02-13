@@ -1,18 +1,22 @@
 <template>
-  <van-cell :title="prop.title" :is-link="prop.isLink" :to="prop.url" />
+  <van-cell :title="title" :is-link="isLink" :to="url" />
 </template>
 
 <script>
 export default {
   name: 'ZvCell',
   props: {
-    prop: {
-      type: Object,
-      default() {
-        return {
-          title: ''
-        }
-      }
+    title: {
+      type: String,
+      default: ''
+    },
+    url: {
+      type: String,
+      default: ''
+    },
+    isLink: {
+      type: Boolean,
+      default: false
     }
   }
 }

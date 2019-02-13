@@ -60,6 +60,11 @@ module.exports = {
       return args
     })
 
+    // 配置别名
+    config.resolve.alias
+      .set('components', resolve('src/components'))
+      .set('mixins', resolve('src/mixins'))
+
     if (process.env.NODE_ENV === 'production') {
       // 生产环境不打包externals下的资源
       config.externals(externals)
@@ -96,6 +101,12 @@ module.exports = {
     config.module.rule('images').test(/\.(png|jpe?g|gif|svg)(\?.*)?$/)
   },
   configureWebpack: config => {
+    // 开发环境配置
+    if (debug) {
+      config.devtool = '#source-map'
+    }
+
+    // 配置骨架屏
     config.plugins.push(
       new SkeletonWebpackPlugin({
         webpackConfig: {
@@ -125,6 +136,15 @@ module.exports = {
     // 开启 CSS source maps?
     sourceMap: false,
     // 启用 CSS modules for all css / pre-processor files.
-    modules: false
+    modules: false,
+    loaderOptions: {
+      css: {
+        localIdentName: '[name]-[hash]',
+        camelCase: 'only'
+      },
+      sass: {
+        data: `@import "@/assets/styles/zv-color.scss";`
+      }
+    }
   }
 }

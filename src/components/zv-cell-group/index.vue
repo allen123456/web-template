@@ -1,5 +1,7 @@
 <template>
-  <van-cell-group></van-cell-group>
+  <van-cell-group>
+    <slot></slot>
+  </van-cell-group>
 </template>
 
 <script>

@@ -1,8 +1,15 @@
 <template>
   <div class="home">
-    <zv-nav-bar :prop="navBarData"></zv-nav-bar>
+    <zv-nav-bar :leftArrow="false" title="示例"></zv-nav-bar>
+
     <zv-list>
-      <zv-cell v-for="(item, index) in list" :key="index" :prop="item"></zv-cell>
+      <zv-cell
+        v-for="(item, index) in list"
+        :key="index"
+        :title="item.title"
+        :is-link="item.isLink"
+        :url="item.url"
+      ></zv-cell>
     </zv-list>
   </div>
 </template>
@@ -17,10 +24,12 @@ export default {
   components: { ZvCell, ZvList, ZvNavBar },
   data() {
     return {
-      navBarData: {
-        title: '示例'
-      },
-      list: [{ title: '按钮', isLink: true, url: 'button' }]
+      list: [
+        { title: '按钮', isLink: true, url: 'button' },
+        { title: '标签', isLink: true, url: 'tab' },
+        { title: '表单', isLink: true, url: 'form' },
+        { title: '上传', isLink: true, url: 'uploader' }
+      ]
     }
   }
 }
