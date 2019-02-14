@@ -1,6 +1,6 @@
 <template>
   <div class="zv-tab-bar">
-    <van-tabbar v-model="active" active-color="#aace39">
+    <van-tabbar v-model="currentValue" active-color="#aace39">
       <van-tabbar-item info="3">
         <span>自定义</span>
         <zv-svg-icon slot="icon" icon-class="drag" />
@@ -12,22 +12,13 @@
 </template>
 
 <script>
+import ZvModel from 'mixins/zv-model'
 import ZvSvgIcon from '../zv-svg/index'
 export default {
   name: 'ZvTabBar',
-  components: { ZvSvgIcon },
-  data() {
-    return {
-      active: 0
-    }
-  }
+  mixins: [ZvModel],
+  components: { ZvSvgIcon }
 }
 </script>
 
-<style lang="scss">
-.zv-tab-bar {
-  .van-tabbar-item__text {
-    font-size: 10px;
-  }
-}
-</style>
+<style lang="scss"></style>

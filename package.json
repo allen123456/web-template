@@ -12,6 +12,7 @@
     "analyze": "vue-cli-service build --report"
   },
   "dependencies": {
+    "async-validator": "^1.10.1",
     "axios": "^0.18.0",
     "crypto-js": "^3.1.9-1",
     "cssnano": "^4.1.8",

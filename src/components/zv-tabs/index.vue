@@ -30,10 +30,9 @@ export default {
 .zv-tabs {
   .van-tab {
     color: #8b8b8b;
-    font-size: 16px;
   }
   .van-tab--active {
-    color: #212121;
+    color: $zv-212121;
     font-weight: normal;
   }
   .van-tabs__line {

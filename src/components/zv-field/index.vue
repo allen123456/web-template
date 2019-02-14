@@ -1,26 +1,30 @@
 <template>
   <van-field
-    v-model="username"
+    v-model="currentValue"
     :required="required"
     clearable
+    :readonly="readonly"
+    :type="type"
     :label="label"
     :right-icon="rightIcon"
     :placeholder="placeholder"
-    @click-right-icon="$toast('question')"
+    @click-right-icon="clickRightIcon"
   />
 </template>
 
 <script>
+import ZvModel from 'mixins/zv-model'
 export default {
   name: 'ZvField',
+  mixins: [ZvModel],
   props: {
     label: {
       type: String,
-      default: ''
+      required: true
     },
     rightIcon: {
       type: String,
-      default: 'info-o'
+      default: ''
     },
     placeholder: {
       type: String,
@@ -29,11 +33,19 @@ export default {
     required: {
       type: Boolean,
       default: false
+    },
+    readonly: {
+      type: Boolean,
+      default: false
+    },
+    type: {
+      type: String,
+      default: ''
     }
   },
-  data() {
-    return {
-      username: 'a'
+  methods: {
+    clickRightIcon() {
+      this.$emit('clickRightIcon')
     }
   }
 }
@@ -42,7 +54,6 @@ export default {
 <style lang="scss">
 .van-cell__title {
   color: $zv-212121;
-  font-size: 16px;
 }
 .van-field__right-icon {
   color: $baseColor;

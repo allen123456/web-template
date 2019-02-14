@@ -2,30 +2,27 @@
   <div>
     <zv-nav-bar title="表单"></zv-nav-bar>
 
-    <zv-list>
-      <zv-cell-group>
-        <zv-field label="用户名" :required="true"></zv-field>
-        <zv-field label="用户名"></zv-field>
-      </zv-cell-group>
-      <zv-cell-group>
-        <zv-textarea></zv-textarea>
-      </zv-cell-group>
-    </zv-list>
+    <zv-form :forms="forms"></zv-form>
+
+    <div>
+      {{ this.forms[0].value }}
+    </div>
   </div>
 </template>
 
 <script>
 import ZvNavBar from '../../components/zv-nav-bar/index'
-import ZvList from '../../components/zv-list/index'
-import ZvCellGroup from '../../components/zv-cell-group/index'
-import ZvField from '../../components/zv-field/index'
-import ZvTextarea from '../../components/zv-textarea/index'
+import ZvForm from '../../components/zv-form/index'
 export default {
   name: 'Form',
-  components: { ZvTextarea, ZvField, ZvCellGroup, ZvList, ZvNavBar },
+  components: { ZvForm, ZvNavBar },
   data() {
     return {
-      username: 'a'
+      forms: [
+        { required: true, label: '用户名', value: '', rightIcon: 'info-o' },
+        { label: '密码', fieldType: 'password', value: 'aaaaaaa', readonly: true },
+        { label: '备注', type: 'textarea', value: '' }
+      ]
     }
   }
 }
