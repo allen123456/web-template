@@ -1,28 +1,16 @@
 <template>
   <div class="zv-tabs">
-    <van-tabs ref="zv-tabs" v-model="active" swipeable :line-width="20" :line-height="2">
+    <van-tabs ref="zv-tabs" v-model="currentValue" swipeable :line-width="20" :line-height="2">
       <slot></slot>
     </van-tabs>
   </div>
 </template>
 
 <script>
+import ZvModel from 'mixins/zv-model'
 export default {
   name: 'ZvTabs',
-  props: {
-    value: {
-      type: String,
-      default: '0'
-    }
-  },
-  data() {
-    return {
-      active: '0'
-    }
-  },
-  mounted() {
-    this.active = this.value
-  }
+  mixins: [ZvModel]
 }
 </script>
 

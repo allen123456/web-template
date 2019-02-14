@@ -41,13 +41,13 @@
       </div>
 
       <div class="btn-wrappar">
-        <zv-button plain type="default">按钮</zv-button>
-        <zv-button plain type="default" disabled>按钮disabled</zv-button>
+        <zv-button plain type="primary">按钮</zv-button>
+        <zv-button plain type="primary" disabled>按钮disabled</zv-button>
       </div>
 
       <div class="btn-wrappar">
-        <zv-button plain type="primary">按钮</zv-button>
-        <zv-button plain type="primary" disabled>按钮disabled</zv-button>
+        <zv-button type="default">按钮</zv-button>
+        <zv-button type="default" disabled>按钮disabled</zv-button>
       </div>
 
       <div class="btn-wrappar">
@@ -55,6 +55,7 @@
         <zv-button type="primary" size="small" disabled>按钮</zv-button>
 
         <zv-button type="default" size="small">按钮</zv-button>
+        <zv-button type="default" size="small" disabled>按钮</zv-button>
 
         <zv-button plain type="primary" size="small">下载</zv-button>
         <zv-button plain type="primary" size="small" disabled>下载</zv-button>

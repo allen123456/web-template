@@ -6,7 +6,7 @@
     :left-arrow="leftArrow"
     @click-left="goBack"
     @click-right="prop.onClickRight"
-  />
+  ></van-nav-bar>
 </template>
 
 <script>

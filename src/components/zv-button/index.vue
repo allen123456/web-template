@@ -63,7 +63,7 @@ export default {
         opacity: 0;
       }
       background-color: #fff;
-      opacity: 0.8;
+      opacity: 0.6;
       .van-button__text {
         opacity: 0.4;
       }

@@ -8,7 +8,11 @@
     :label="label"
     :right-icon="rightIcon"
     :placeholder="placeholder"
+    :is-link="isLink"
+    :input-align="inputAlign"
+    :error-message="errorMessage"
     @click-right-icon="clickRightIcon"
+    @blur="handleBlur"
   />
 </template>
 
@@ -41,11 +45,26 @@ export default {
     type: {
       type: String,
       default: ''
+    },
+    isLink: {
+      type: Boolean,
+      default: false
+    },
+    inputAlign: {
+      type: String,
+      default: ''
+    },
+    errorMessage: {
+      type: String,
+      default: ''
     }
   },
   methods: {
     clickRightIcon() {
       this.$emit('clickRightIcon')
+    },
+    handleBlur() {
+      this.$emit('handleBlur')
     }
   }
 }

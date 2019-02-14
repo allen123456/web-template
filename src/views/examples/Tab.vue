@@ -1,10 +1,10 @@
 <template>
   <div>
     <zv-nav-bar title="标签"></zv-nav-bar>
-    <zv-tabs>
+    <zv-tabs v-model="active">
       <zv-tab v-for="index in 4" :title="'选项 ' + index" :key="index">
         {{ index }}
-        <zv-tab-bar></zv-tab-bar>
+        <zv-tab-bar v-model="tabActive"></zv-tab-bar>
       </zv-tab>
     </zv-tabs>
   </div>
@@ -20,7 +20,8 @@ export default {
   components: { ZvTabBar, ZvNavBar, ZvTabs, ZvTab },
   data() {
     return {
-      active: '0'
+      active: '0',
+      tabActive: 0
     }
   }
 }
