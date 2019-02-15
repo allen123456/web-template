@@ -1,7 +1,7 @@
 # 中联前端(移动端)开发基础框架 | [风格指南](./风格指南.md)
 ```
 
-##文件作用：
+## 文件作用：
 ```
  mock：配置假数据
  router: 配置页面路由
@@ -19,7 +19,7 @@
  .env.production: 设置production环境下，所要的全局属性（生产环境）
  ```
 
-##配置项：
+## 配置项：
 ```
  .注释格式
    /** 2019/1/28
@@ -30,7 +30,7 @@
  .移动端基于vw适配
  ```
 
-##请求
+## 请求
 ```
  .默认每次请求都会加载请求动画，若是某些接口不需要加载动画，在请求参数中添加isHideLoading，且设置为true
    request({
@@ -46,19 +46,19 @@
    })
    ```
 
-##路由
+## 路由
 ```
  .在router文件夹中，为每个模块单独创建一个文件夹。根据不同的业务模块进行拆分路由，在每个子模块中导出一个路由配置数组。
   在根 index.js中扫描所有的路由并自动加载(需重新编译)
   ```
 
-##组件封装
+## 组件封装
 ```
  .所有公共组件，用zv-包装
  .涉及到业务逻辑的组件，在封装的时候，通过mixin，将业务逻辑代码和基本组件代码区分
  ```
 
-##优化
+## 优化
 ```
  .异步路由 { path: '/order', component: () => import('./views/order.vue') }
  .异步组件 export default { components: { HellowWorld: () => import('../components/HelloWorld.vue') } }
@@ -67,7 +67,7 @@
  .使用svgo优化svg
  ```
 
-##依赖
+## 依赖
 ```
  .vue-create-api  https://github.com/cube-ui/vue-create-api
  .crypto-js       https://github.com/brix/crypto-js
