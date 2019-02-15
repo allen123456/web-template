@@ -69,7 +69,6 @@
 ```
  .vue-create-api  https://github.com/cube-ui/vue-create-api
  .crypto-js       https://github.com/brix/crypto-js
- .vconsole        https://github.com/Tencent/vConsole
 ```
 
 ## Project setup
