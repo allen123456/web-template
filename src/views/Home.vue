@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <zv-nav-bar :leftArrow="false" title="示例"></zv-nav-bar>
+    <zv-nav-bar :leftArrow="false" title="基本组件"></zv-nav-bar>
 
     <zv-list>
       <zv-cell
