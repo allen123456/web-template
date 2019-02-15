@@ -68,6 +68,7 @@
 
 ## 依赖
 ```
+ .vant            https://github.com/youzan/vant
  .vue-create-api  https://github.com/cube-ui/vue-create-api
  .crypto-js       https://github.com/brix/crypto-js
  .vconsole        https://github.com/Tencent/vConsole
