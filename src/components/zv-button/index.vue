@@ -1,6 +1,6 @@
 <template>
   <div class="zv-btn">
-    <van-button :plain="plain" :type="type" :size="size" :disabled="disabled">
+    <van-button :plain="plain" :type="type" :size="size" :disabled="disabled" @click="btnClick">
       <slot />
     </van-button>
   </div>
@@ -25,6 +25,11 @@ export default {
     disabled: {
       type: Boolean,
       default: false
+    }
+  },
+  methods: {
+    btnClick() {
+      this.$emit('click')
     }
   }
 }

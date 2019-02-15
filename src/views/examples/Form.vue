@@ -13,7 +13,7 @@
 <script>
 import ZvNavBar from '../../components/zv-nav-bar/index'
 import ZvForm from '../../components/zv-form/index'
-import dialog from '../../utils/dialog'
+import { dialog } from '../../components/zv-pop/index'
 export default {
   name: 'Form',
   components: { ZvForm, ZvNavBar },
@@ -59,6 +59,8 @@ export default {
     clickRightIcon() {
       dialog({
         message: '123'
+      }).then(() => {
+        alert(1111)
       })
     }
   }

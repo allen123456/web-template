@@ -23,5 +23,25 @@ export default [
     path: '/dialog',
     name: 'dialog',
     component: () => import(/* webpackChunkName: "dialog" */ '@/views/examples/Dialog.vue')
+  },
+  {
+    path: '/picker',
+    name: 'picker',
+    component: () => import(/* webpackChunkName: "dialog" */ '@/views/examples/Picker.vue')
+  },
+  {
+    path: '/toast',
+    name: 'toast',
+    component: () => import(/* webpackChunkName: "dialog" */ '@/views/examples/Toast.vue')
+  },
+  {
+    path: '/popup',
+    name: 'popup',
+    component: () => import(/* webpackChunkName: "dialog" */ '@/views/examples/Popup.vue')
+  },
+  {
+    path: '/list',
+    name: 'list',
+    component: () => import(/* webpackChunkName: "dialog" */ '@/views/examples/List.vue')
   }
 ]

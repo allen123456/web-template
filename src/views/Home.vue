@@ -2,7 +2,7 @@
   <div class="home">
     <zv-nav-bar :leftArrow="false" title="基本组件"></zv-nav-bar>
 
-    <zv-list>
+    <div>
       <zv-cell
         v-for="(item, index) in list"
         :key="index"
@@ -10,18 +10,17 @@
         :is-link="item.isLink"
         :url="item.url"
       ></zv-cell>
-    </zv-list>
+    </div>
   </div>
 </template>
 
 <script>
 import ZvNavBar from '../components/zv-nav-bar/index'
-import ZvList from '../components/zv-list/index'
 import ZvCell from '../components/zv-cell/index'
 
 export default {
   name: 'home',
-  components: { ZvCell, ZvList, ZvNavBar },
+  components: { ZvCell, ZvNavBar },
   data() {
     return {
       list: [
@@ -29,7 +28,11 @@ export default {
         { title: '标签', isLink: true, url: 'tab' },
         { title: '表单', isLink: true, url: 'form' },
         { title: '上传', isLink: true, url: 'uploader' },
-        { title: '提示类', isLink: true, url: 'dialog' }
+        { title: 'Dialog', isLink: true, url: 'dialog' },
+        { title: 'Toast', isLink: true, url: 'toast' },
+        { title: 'Picker', isLink: true, url: 'picker' },
+        { title: 'Popup', isLink: true, url: 'popup' },
+        { title: '列表', isLink: true, url: 'list' }
       ]
     }
   }
