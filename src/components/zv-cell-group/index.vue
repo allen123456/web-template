@@ -1,6 +1,6 @@
 <template>
   <van-cell-group>
-    <slot></slot>
+    <slot />
   </van-cell-group>
 </template>
 

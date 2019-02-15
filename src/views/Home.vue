@@ -28,7 +28,8 @@ export default {
         { title: '按钮', isLink: true, url: 'button' },
         { title: '标签', isLink: true, url: 'tab' },
         { title: '表单', isLink: true, url: 'form' },
-        { title: '上传', isLink: true, url: 'uploader' }
+        { title: '上传', isLink: true, url: 'uploader' },
+        { title: '提示类', isLink: true, url: 'dialog' }
       ]
     }
   }

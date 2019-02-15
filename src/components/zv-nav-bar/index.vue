@@ -6,7 +6,7 @@
     :left-arrow="leftArrow"
     @click-left="goBack"
     @click-right="prop.onClickRight"
-  ></van-nav-bar>
+  />
 </template>
 
 <script>
@@ -40,7 +40,10 @@ export default {
     }
   },
   computed: {
-    // 如果属性值中定义了leftArrow=true且未定义了左侧按钮方法，使用默认方法
+    /** 2019/2/15
+     * @Author: 刘宇琳
+     * @Desc: 如果属性值中定义了leftArrow=true且未定义了左侧按钮方法，使用默认方法
+     */
     goBack() {
       if (this.leftArrow && this.prop) {
         if (typeof this.prop.onClickLeft !== 'function') {

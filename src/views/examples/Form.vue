@@ -13,6 +13,7 @@
 <script>
 import ZvNavBar from '../../components/zv-nav-bar/index'
 import ZvForm from '../../components/zv-form/index'
+import dialog from '../../utils/dialog'
 export default {
   name: 'Form',
   components: { ZvForm, ZvNavBar },
@@ -56,7 +57,9 @@ export default {
   },
   methods: {
     clickRightIcon() {
-      this.$toast('question')
+      dialog({
+        message: '123'
+      })
     }
   }
 }

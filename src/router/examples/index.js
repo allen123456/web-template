@@ -18,5 +18,10 @@ export default [
     path: '/uploader',
     name: 'uploader',
     component: () => import(/* webpackChunkName: "uploader" */ '@/views/examples/Uploader.vue')
+  },
+  {
+    path: '/dialog',
+    name: 'dialog',
+    component: () => import(/* webpackChunkName: "dialog" */ '@/views/examples/Dialog.vue')
   }
 ]

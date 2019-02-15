@@ -68,7 +68,7 @@
 import ZvNavBar from '../../components/zv-nav-bar/index'
 import ZvButton from '../../components/zv-button/index'
 export default {
-  name: 'ButtonPage',
+  name: 'Button',
   components: { ZvButton, ZvNavBar }
 }
 </script>

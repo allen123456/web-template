@@ -1,7 +1,7 @@
 <template>
   <div class="zv-btn">
     <van-button :plain="plain" :type="type" :size="size" :disabled="disabled">
-      <slot></slot>
+      <slot />
     </van-button>
   </div>
 </template>

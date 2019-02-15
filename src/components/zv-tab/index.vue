@@ -1,6 +1,6 @@
 <template>
   <van-tab :title="title">
-    <slot></slot>
+    <slot />
   </van-tab>
 </template>
 
