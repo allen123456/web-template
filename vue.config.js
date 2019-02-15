@@ -58,6 +58,9 @@ module.exports = {
       return args
     })
 
+    // 配置别名
+    config.resolve.alias.set('components', resolve('src/components')).set('mixins', resolve('src/mixins'))
+
     if (process.env.NODE_ENV === 'production') {
       // 生产环境不打包externals下的资源
       config.externals(externals)
@@ -94,6 +97,12 @@ module.exports = {
     config.module.rule('images').test(/\.(png|jpe?g|gif|svg)(\?.*)?$/)
   },
   configureWebpack: config => {
+    // 开发环境配置
+    if (debug) {
+      config.devtool = '#source-map'
+    }
+
+    // 配置骨架屏
     config.plugins.push(
       new SkeletonWebpackPlugin({
         webpackConfig: {
