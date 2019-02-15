@@ -1,5 +1,4 @@
 # 中联前端(移动端)开发基础框架 | [风格指南](./风格指南.md)
-```
 
 ## 文件作用：
 ```
@@ -17,7 +16,7 @@
  .env.debugger: 设置debugger环境下，所要的全局属性(用于局域网中调试。若后端是微服务，配合debugger.port.js。)
  .env.development: 设置development环境下，所要的全局属性（开发环境）
  .env.production: 设置production环境下，所要的全局属性（生产环境）
- ```
+```
 
 ## 配置项：
 ```
@@ -28,7 +27,7 @@
     */
  .代码规则与风格：eslint+prettier
  .移动端基于vw适配
- ```
+```
 
 ## 请求
 ```
@@ -44,19 +43,19 @@
      method: 'post',
      isFile: true
    })
-   ```
+```
 
 ## 路由
 ```
  .在router文件夹中，为每个模块单独创建一个文件夹。根据不同的业务模块进行拆分路由，在每个子模块中导出一个路由配置数组。
   在根 index.js中扫描所有的路由并自动加载(需重新编译)
-  ```
+```
 
 ## 组件封装
 ```
  .所有公共组件，用zv-包装
  .涉及到业务逻辑的组件，在封装的时候，通过mixin，将业务逻辑代码和基本组件代码区分
- ```
+```
 
 ## 优化
 ```
@@ -65,14 +64,14 @@
  .除非组件1.有预渲染需求；2.需要频繁切换显示状态，否则使用v-if代替v-show
  .对于多次会用到的逻辑，使用mixin封装，例如：多个地方用到相同的请求
  .使用svgo优化svg
- ```
+```
 
 ## 依赖
 ```
  .vue-create-api  https://github.com/cube-ui/vue-create-api
  .crypto-js       https://github.com/brix/crypto-js
  .vconsole        https://github.com/Tencent/vConsole
- ```
+```
 
 ## Project setup
 ```
