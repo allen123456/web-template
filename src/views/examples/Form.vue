@@ -2,10 +2,11 @@
   <div>
     <zv-nav-bar title="表单"></zv-nav-bar>
 
-    <zv-form :forms="forms"></zv-form>
+    <zv-form ref="ZvForm" :forms="forms"></zv-form>
 
-    <div>
-      {{ this.forms[0].value }}
+    <div class="btn-wrappar">
+      <zv-button type="primary" @click="btnClick(0)">立即创建</zv-button>
+      <zv-button plain type="default" @click="btnClick(1)">重置表单</zv-button>
     </div>
   </div>
 </template>
@@ -13,10 +14,11 @@
 <script>
 import ZvNavBar from '../../components/zv-nav-bar/index'
 import ZvForm from '../../components/zv-form/index'
-import { dialog } from '../../components/zv-pop/index'
+import { toast } from '../../components/zv-pop/index'
+import ZvButton from '../../components/zv-button/index'
 export default {
   name: 'Form',
-  components: { ZvForm, ZvNavBar },
+  components: { ZvButton, ZvForm, ZvNavBar },
   data() {
     return {
       forms: [
@@ -26,7 +28,7 @@ export default {
           rightIcon: 'info-o',
           clickRightIcon: this.clickRightIcon
         },
-        { label: '密码', fieldType: 'password', value: 'aaaaaaa', readonly: true },
+        { label: '密码', fieldType: 'password', value: 'aaaaaaa' },
         {
           label: '邮箱',
           value: '',
@@ -57,14 +59,28 @@ export default {
   },
   methods: {
     clickRightIcon() {
-      dialog({
-        message: '123'
-      }).then(() => {
-        alert(1111)
-      })
+      toast({ message: '点击图标' })
+    },
+    btnClick(index) {
+      if (index === 0) {
+        this.$refs.ZvForm.onValidate(error => {
+          error ? toast({ message: '验证通过' }) : toast({ message: '验证失败' })
+        })
+      } else {
+        this.$refs.ZvForm.resetFields()
+      }
     }
   }
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.btn-wrappar {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+}
+</style>

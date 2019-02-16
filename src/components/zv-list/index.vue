@@ -1,46 +1,45 @@
 <template>
   <div>
-    <van-list
-      v-if="haveData"
-      v-model="currentValue"
-      :finished="finished"
-      finished-text="没有更多了"
-      :error.sync="error"
-      error-text="请求失败，点击重新加载"
-      @load="handleLoad"
-    >
-      <slot :dataSource="dataSource" />
-    </van-list>
+    <van-pull-refresh v-if="haveData" v-model="refreshing" @refresh="handleLoad('pullingDown')">
+      <van-list
+        v-model="loading"
+        :finished="finished"
+        finished-text="没有更多了"
+        :error.sync="error"
+        error-text="请求失败，点击重新加载"
+        @load="handleLoad('pullingUp')"
+      >
+        <slot :dataSource="dataSource" />
+      </van-list>
+    </van-pull-refresh>
     <no-more-data v-else />
   </div>
 </template>
 
 <script>
-import ZvModel from 'mixins/zv-model'
 import NoMoreData from './NoMoreData'
+import { toast } from '../../components/zv-pop/index'
 export default {
   name: 'ZvList',
   components: { NoMoreData },
-  mixins: [ZvModel],
   props: {
-    error: {
-      type: Boolean,
-      default: false
-    },
     pageSize: {
       type: Number,
-      default: 10
+      default: 20
     },
     dataSource: {
       type: Array,
       default() {
-        return ['']
+        return []
       }
     }
   },
   data() {
     return {
-      finished: false
+      finished: false,
+      refreshing: false,
+      error: false,
+      loading: false
     }
   },
   computed: {
@@ -50,9 +49,31 @@ export default {
     }
   },
   methods: {
-    handleLoad() {
-      debugger
-      this.$emit('handleLoad')
+    handleLoad(pullAction) {
+      if (pullAction === 'pullingUp' && !this.refreshing) {
+        this.loading = true
+        this.$emit('handleLoad', { pullAction, callback: this.callback })
+      } else if (pullAction === 'pullingDown') {
+        this.$emit('handleLoad', { pullAction, callback: this.callback })
+      }
+    },
+    callback({ pullAction = '', limit = 0, error = false } = {}) {
+      if (!error) {
+        if (pullAction === 'pullingUp') {
+          this.loading = false
+          this.finished = limit < this.pageSize
+        } else if (pullAction === 'pullingDown') {
+          this.refreshing = false
+          window.scrollTo(0, this.pageSize)
+        }
+      } else {
+        if (pullAction === 'pullingUp') {
+          this.error = true
+        } else if (pullAction === 'pullingDown') {
+          this.refreshing = false
+          toast({ message: '刷新失败' })
+        }
+      }
     }
   }
 }

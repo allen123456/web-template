@@ -1,6 +1,7 @@
 import Mock from 'mockjs'
 import testAPI from './test'
 
-Mock.mock('/auth/accountLogin/w/v1', 'post', testAPI.test)
+Mock.mock('/test', 'post', testAPI.test)
+Mock.mock('/test/error', 'post', testAPI.error)
 
 export default Mock

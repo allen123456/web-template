@@ -49,6 +49,10 @@ export default {
     }
   },
   computed: {
+    /** 2019/2/16
+     * @Author: 刘宇琳
+     * @Desc: 这个可以用来对表单组件做一些个性化设置
+     */
     //   dataSource() {
     //     return this.forms.map(item => {
     //       if (item.readonly) {
@@ -92,6 +96,59 @@ export default {
         }
         that.forms.splice(index, 1, that.forms[index])
       })
+    },
+    /** 2019/2/16
+     * @Author: 刘宇琳
+     * @Desc: 供外部调用，检查是否全部验证通过
+     */
+    onValidate(callback) {
+      let isbool = true
+      let itemIndex = 0
+      const length = this.forms.length
+      for (let i = 0; i < length; i++) {
+        ;(index => {
+          const that = this
+          const rule = that.forms[index].rule
+          if (rule) {
+            const value = that.forms[index].value
+            let descriptor = { name: rule }
+            let validator = new Schema(descriptor)
+            validator.validate({ name: value }, errors => {
+              if (errors && errors[0] !== '') {
+                that.forms[index].errorMessage = errors[0].message
+                isbool = false
+              } else {
+                that.forms[index].errorMessage = ''
+              }
+              that.forms.splice(index, 1, that.forms[index])
+              itemIndex = index
+              if (itemIndex === length - 1) {
+                callback(isbool)
+              }
+            })
+          } else {
+            itemIndex = index
+            if (itemIndex === length - 1) {
+              callback(isbool)
+            }
+          }
+        })(i)
+      }
+    },
+    /** 2019/2/16
+     * @Author: 刘宇琳
+     * @Desc: 重置表单
+     */
+    resetFields() {
+      const length = this.forms.length
+      for (let i = 0; i < length; i++) {
+        const item = this.forms[i]
+        item.value = ''
+        if (item.errorMessage && item.errorMessage !== '') {
+          item.errorMessage = ''
+        }
+        this.forms.splice(i, 1, item)
+      }
     }
   }
 }

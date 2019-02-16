@@ -17,7 +17,7 @@ export default {
     },
     iconClass: {
       type: String,
-      default: 'kong'
+      default: 'drag'
     }
   },
   methods: {

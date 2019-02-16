@@ -1,4 +1,4 @@
-import { Dialog, Toast } from 'vant'
+import { Dialog, Toast, Notify } from 'vant'
 
 function dialog({ type = 'alert', title = '', message = '' } = {}) {
   return new Promise(function(resolve, reject) {
@@ -43,3 +43,14 @@ function toast({ message = '', success = '', fail = '', loading = '' } = {}) {
 }
 
 export { toast }
+
+function notify({ message = '', duration = 1000, background = '#1989fa', color = '#fff' } = {}) {
+  return Notify({
+    message: message,
+    duration: duration,
+    background: background,
+    color: color
+  })
+}
+
+export { notify }
