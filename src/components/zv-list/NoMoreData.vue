@@ -1,7 +1,10 @@
 <template>
   <div class="no-more-data">
     <div class="wrappar" @click="handleClick">
-      <zv-svg-icon :icon-class="iconClass" class="no-more-data-img"></zv-svg-icon>
+      <zv-svg-icon
+        :icon-class="iconClass"
+        class="no-more-data-img"
+      ></zv-svg-icon>
       <span class="no-more-data-title">{{ noMoreDataTitle }}</span>
     </div>
   </div>
@@ -41,12 +44,13 @@ export default {
     flex-direction: column;
     align-items: center;
     .no-more-data-img {
-      color: #333;
+      color: $zv-8b8b8b;
       font-size: 66px;
     }
     .no-more-data-title {
-      color: #333;
-      font-size: 12px;
+      color: $zv-8b8b8b;
+      font-size: 14px;
+      margin-top: 10px;
     }
   }
 }

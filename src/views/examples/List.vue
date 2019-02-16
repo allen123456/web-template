@@ -2,7 +2,7 @@
   <div class="list">
     <zv-nav-bar title="列表" />
 
-    <zv-list class="test-list" @handleLoad="onLoad" :data-source="list">
+    <zv-list class="list-wrappar" @handleLoad="onLoad" :data-source="list">
       <template v-slot="{ dataSource }">
         <zv-cell
           v-for="(item, index) in dataSource"
@@ -28,7 +28,7 @@ export default {
     }
   },
   mounted() {
-    this.loadData()
+    // this.loadData()
   },
   methods: {
     loadData() {
@@ -56,7 +56,7 @@ export default {
 .list {
   height: calc(100vh);
   overflow: hidden;
-  .test-list {
+  .list-wrappar {
     height: calc(100vh - 46px);
   }
 }

@@ -38,6 +38,11 @@ export default {
       default: false
     }
   },
+  data() {
+    return {
+      instance: null
+    }
+  },
   methods: {
     onRead(file) {
       this.images.push(file.content)
@@ -46,14 +51,19 @@ export default {
       this.images.splice(index, 1)
     },
     clickImg(index) {
-      ImagePreview({
+      this.instance = ImagePreview({
         images: this.images,
         startPosition: index,
+        showIndicators: true,
+        asyncClose: true,
         onClose() {
           // do something
         }
       })
     }
+  },
+  beforeDestroy() {
+    this.instance && this.instance.close()
   }
 }
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="zv-list">
+  <div ref="scrollList" class="zv-list">
     <van-pull-refresh
       v-if="haveData"
       v-model="refreshing"
@@ -11,12 +11,13 @@
         finished-text="没有更多了"
         :error.sync="error"
         error-text="请求失败，点击重新加载"
+        :immediate-check="false"
         @load="handleLoad('pullingUp')"
       >
         <slot :dataSource="dataSource" />
       </van-list>
     </van-pull-refresh>
-    <no-more-data v-else />
+    <no-more-data v-else :style="noDataHeight" />
   </div>
 </template>
 
@@ -27,6 +28,7 @@ export default {
   name: 'ZvList',
   components: { NoMoreData },
   props: {
+    // 页面一次加载多少个数据
     pageSize: {
       type: Number,
       default: 10
@@ -43,19 +45,34 @@ export default {
       finished: false,
       refreshing: false,
       error: false,
-      loading: false
+      loading: false,
+      noDataHeight: { height: this.computedHeight }
+    }
+  },
+  created() {
+    // 由于关闭了'在初始化时立即执行滚动位置检查'，第一次加载时，手动判断是否没有更多数据了
+    if (this.dataSource.length < this.pageSize) {
+      this.finished = true
     }
   },
   computed: {
     // 是否有数据，以便判断是否出现无数据页面
     haveData() {
-      return Array.isArray(this.dataSource) && this.dataSource.length
+      return this.dataSource.length > 0
+    },
+    // 计算容器高度
+    computedHeight() {
+      if (this.$refs.scrollList) {
+        debugger
+        const scrollHeight = this.$refs.scrollList.$el.clientHeight
+        return `${scrollHeight}px`
+      }
+      return `300px`
     }
   },
   methods: {
     handleLoad(pullAction) {
       if (pullAction === 'pullingUp' && !this.refreshing) {
-        this.loading = true
         this.$emit('handleLoad', { pullAction, callback: this.callback })
       } else if (pullAction === 'pullingDown') {
         this.$emit('handleLoad', { pullAction, callback: this.callback })
@@ -68,7 +85,7 @@ export default {
           this.finished = limit < this.pageSize
         } else if (pullAction === 'pullingDown') {
           this.refreshing = false
-          window.scrollTo(0, this.pageSize)
+          // window.scrollTo(0, this.pageSize)
         }
       } else {
         if (pullAction === 'pullingUp') {
