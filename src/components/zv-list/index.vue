@@ -1,6 +1,10 @@
 <template>
-  <div>
-    <van-pull-refresh v-if="haveData" v-model="refreshing" @refresh="handleLoad('pullingDown')">
+  <div class="zv-list">
+    <van-pull-refresh
+      v-if="haveData"
+      v-model="refreshing"
+      @refresh="handleLoad('pullingDown')"
+    >
       <van-list
         v-model="loading"
         :finished="finished"
@@ -25,7 +29,7 @@ export default {
   props: {
     pageSize: {
       type: Number,
-      default: 20
+      default: 10
     },
     dataSource: {
       type: Array,
@@ -79,4 +83,8 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style lang="scss" scoped>
+.zv-list {
+  overflow: scroll;
+}
+</style>

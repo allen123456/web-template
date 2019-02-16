@@ -1,6 +1,12 @@
 <template>
   <div class="zv-btn">
-    <van-button :plain="plain" :type="type" :size="size" :disabled="disabled" @click="btnClick">
+    <van-button
+      :plain="plain"
+      :type="type"
+      :size="size"
+      :disabled="disabled"
+      @click="btnClick"
+    >
       <slot />
     </van-button>
   </div>
@@ -55,7 +61,7 @@ export default {
     @include btn-color;
   }
   .van-button--default {
-    @include btn-color(#fafafa, #e0e0e0);
+    @include btn-color(#fafafa, $zv-e0e0e0);
   }
   .van-button--warning {
     @include btn-color(#e53935, #e53935);
@@ -78,7 +84,7 @@ export default {
     color: $baseColor;
   }
   .van-button--plain.van-button--default {
-    border-color: #e0e0e0;
+    border-color: $zv-e0e0e0;
   }
 
   .van-button--large {

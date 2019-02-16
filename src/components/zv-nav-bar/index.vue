@@ -66,6 +66,7 @@ export default {
 <style scoped lang="scss">
 .van-nav-bar {
   background-color: $navBarBg;
+  height: 44px;
   .van-icon {
     color: $navBarTitle;
   }

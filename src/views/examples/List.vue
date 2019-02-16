@@ -2,9 +2,13 @@
   <div class="list">
     <zv-nav-bar title="列表" />
 
-    <zv-list style="height: 300px" @handleLoad="onLoad" :data-source="list">
+    <zv-list class="test-list" @handleLoad="onLoad" :data-source="list">
       <template v-slot="{ dataSource }">
-        <zv-cell v-for="(item, index) in dataSource" :key="index" :title="item" />
+        <zv-cell
+          v-for="(item, index) in dataSource"
+          :key="index"
+          :title="item"
+        />
       </template>
     </zv-list>
   </div>
@@ -20,8 +24,7 @@ export default {
   components: { ZvCell, ZvNavBar, ZvList },
   data() {
     return {
-      list: [],
-      index: 0
+      list: []
     }
   },
   mounted() {
@@ -39,6 +42,7 @@ export default {
           obj.callback({ pullAction: obj.pullAction, error: true })
         })
       } else {
+        debugger
         api.test().then(arr => {
           this.list = this.list.concat(arr)
           obj.callback({ pullAction: obj.pullAction, limit: arr.length })
@@ -48,5 +52,12 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.list {
+  height: calc(100vh);
+  overflow: hidden;
+  .test-list {
+    height: calc(100vh - 46px);
+  }
+}
+</style>

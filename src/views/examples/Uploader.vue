@@ -2,9 +2,21 @@
   <div>
     <zv-nav-bar title="上传"></zv-nav-bar>
 
-    <h4>内容上传</h4>
+    <div class="header">
+      <span>上传</span>
 
-    <zv-uploader></zv-uploader>
+      <div class="btn-wrappar">
+        <zv-uploader :images="images" />
+      </div>
+    </div>
+
+    <div class="header">
+      <span>展示</span>
+
+      <div class="btn-wrappar">
+        <zv-uploader :images="images" is-display />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -13,8 +25,34 @@ import ZvUploader from '../../components/zv-uploader/index'
 import ZvNavBar from '../../components/zv-nav-bar/index'
 export default {
   name: 'Uploader',
-  components: { ZvNavBar, ZvUploader }
+  components: { ZvNavBar, ZvUploader },
+  data() {
+    return {
+      images: [
+        '//img.yzcdn.cn/public_files/2017/09/05/3bd347e44233a868c99cf0fe560232be.jpg',
+        '//img.yzcdn.cn/public_files/2017/09/05/c0dab461920687911536621b345a0bc9.jpg'
+      ]
+    }
+  }
 }
 </script>
 
-<style scoped></style>
+<style lang="scss" scoped>
+.header {
+  padding-top: 10px;
+  span {
+    display: block;
+    padding-left: 10px;
+    font-size: 14px;
+    color: $zv-212121;
+  }
+  .btn-wrappar {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+}
+</style>

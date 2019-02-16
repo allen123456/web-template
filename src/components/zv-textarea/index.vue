@@ -59,7 +59,7 @@ export default {
   }
   .van-hairline--bottom {
     &:after {
-      border-color: #e0e0e0;
+      border-color: $zv-e0e0e0;
     }
   }
 }

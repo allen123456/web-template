@@ -1,6 +1,12 @@
 <template>
   <div class="zv-tabs">
-    <van-tabs ref="zv-tabs" v-model="currentValue" swipeable :line-width="20" :line-height="2">
+    <van-tabs
+      ref="zv-tabs"
+      v-model="currentValue"
+      swipeable
+      :line-width="20"
+      :line-height="2"
+    >
       <slot />
     </van-tabs>
   </div>
@@ -17,7 +23,7 @@ export default {
 <style lang="scss">
 .zv-tabs {
   .van-tab {
-    color: #8b8b8b;
+    color: $zv-8b8b8b;
   }
   .van-tab--active {
     color: $zv-212121;

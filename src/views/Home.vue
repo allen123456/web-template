@@ -32,7 +32,8 @@ export default {
         { title: 'Toast', isLink: true, url: 'toast' },
         { title: 'Picker', isLink: true, url: 'picker' },
         { title: 'Popup', isLink: true, url: 'popup' },
-        { title: '列表', isLink: true, url: 'list' }
+        { title: '列表', isLink: true, url: 'list' },
+        { title: '搜索', isLink: true, url: 'search' }
       ]
     }
   }

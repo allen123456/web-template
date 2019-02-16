@@ -1,14 +1,16 @@
 <template>
-  <zv-pop-up v-model="currentValue" position="bottom">
-    <van-picker
-      show-toolbar
-      :title="title"
-      :columns="columns"
-      @cancel="handleCancel"
-      @confirm="handleConfirm"
-      @change="handleChange"
-    />
-  </zv-pop-up>
+  <div class="zv-picker">
+    <zv-pop-up v-model="currentValue" position="bottom">
+      <van-picker
+        show-toolbar
+        :title="title"
+        :columns="columns"
+        @cancel="handleCancel"
+        @confirm="handleConfirm"
+        @change="handleChange"
+      />
+    </zv-pop-up>
+  </div>
 </template>
 
 <script>
@@ -44,4 +46,13 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style lang="scss">
+.zv-picker {
+  .van-picker__cancel {
+    color: $zv-8b8b8b;
+  }
+  .van-picker__confirm {
+    color: $baseColor;
+  }
+}
+</style>

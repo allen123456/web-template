@@ -6,9 +6,13 @@
       <span>消息提示</span>
 
       <div class="btn-wrappar">
-        <zv-button plain type="default" @click="btnClick(0)">消息提示</zv-button>
+        <zv-button plain type="default" @click="btnClick(0)">
+          消息提示
+        </zv-button>
 
-        <zv-button plain type="default" @click="btnClick(1)">无标题提示</zv-button>
+        <zv-button plain type="default" @click="btnClick(1)">
+          无标题提示
+        </zv-button>
       </div>
     </div>
 
@@ -16,7 +20,9 @@
       <span>消息确认</span>
 
       <div class="btn-wrappar">
-        <zv-button plain type="default" @click="btnClick(2)">消息确认</zv-button>
+        <zv-button plain type="default" @click="btnClick(2)">
+          消息确认
+        </zv-button>
       </div>
     </div>
   </div>

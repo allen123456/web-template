@@ -8,7 +8,9 @@
       </div>
 
       <div class="btn-wrappar">
-        <zv-button type="primary" size="large" disabled>页面主操作按钮</zv-button>
+        <zv-button type="primary" size="large" disabled>
+          页面主操作按钮
+        </zv-button>
       </div>
 
       <div class="btn-wrappar">
@@ -16,7 +18,9 @@
       </div>
 
       <div class="btn-wrappar">
-        <zv-button plain type="primary" size="large" disabled>页面主操作按钮</zv-button>
+        <zv-button disabled plain type="primary" size="large">
+          页面主操作按钮
+        </zv-button>
       </div>
 
       <div class="btn-wrappar">
@@ -24,7 +28,9 @@
       </div>
 
       <div class="btn-wrappar">
-        <zv-button type="default" size="large" disabled>页面次操作disabled</zv-button>
+        <zv-button type="default" size="large" disabled>
+          页面次操作disabled
+        </zv-button>
       </div>
 
       <div class="btn-wrappar">
@@ -32,7 +38,9 @@
       </div>
 
       <div class="btn-wrappar">
-        <zv-button type="warning" size="large" disabled>警告类操作disabled</zv-button>
+        <zv-button disabled type="warning" size="large">
+          警告类操作disabled
+        </zv-button>
       </div>
 
       <div class="btn-wrappar">
