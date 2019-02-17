@@ -7,7 +7,7 @@
     >
       <van-list
         v-model="loading"
-        :finished="finished"
+        :finished="isFinished"
         finished-text="没有更多了"
         :error.sync="error"
         error-text="请求失败，点击重新加载"
@@ -31,7 +31,7 @@ export default {
     // 页面一次加载多少个数据
     pageSize: {
       type: Number,
-      default: 10
+      default: 20
     },
     dataSource: {
       type: Array,
@@ -49,18 +49,21 @@ export default {
       noDataHeight: { height: this.computedHeight }
     }
   },
-  created() {
-    // 由于关闭了'在初始化时立即执行滚动位置检查'，第一次加载时，手动判断是否没有更多数据了
-    if (this.dataSource.length < this.pageSize) {
-      this.finished = true
-    }
-  },
   computed: {
-    // 是否有数据，以便判断是否出现无数据页面
+    /** 2019/2/17
+     * @Author: 刘宇琳
+     * @Desc: 是否有数据，以便判断是否出现无数据页面
+     */
     haveData() {
       return this.dataSource.length > 0
     },
-    // 计算容器高度
+    isFinished() {
+      return this.dataSource.length < this.pageSize
+    },
+    /** 2019/2/17
+     * @Author: 刘宇琳
+     * @Desc: 计算容器高度
+     */
     computedHeight() {
       if (this.$refs.scrollList) {
         debugger
@@ -78,6 +81,10 @@ export default {
         this.$emit('handleLoad', { pullAction, callback: this.callback })
       }
     },
+    /** 2019/2/17
+     * @Author: 刘宇琳
+     * @Desc: pullAction: 当前是上拉还是下拉操作 limit: 当前返回的数据条数 error: 当前请求是否报错
+     */
     callback({ pullAction = '', limit = 0, error = false } = {}) {
       if (!error) {
         if (pullAction === 'pullingUp') {

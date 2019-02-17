@@ -73,11 +73,10 @@
 </template>
 
 <script>
-import ZvNavBar from '../../components/zv-nav-bar/index'
 import ZvButton from '../../components/zv-button/index'
 export default {
   name: 'Button',
-  components: { ZvButton, ZvNavBar }
+  components: { ZvButton }
 }
 </script>
 

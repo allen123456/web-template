@@ -2,33 +2,45 @@
   <div class="list">
     <zv-nav-bar title="列表" />
 
-    <zv-list class="list-wrappar" @handleLoad="onLoad" :data-source="list">
-      <template v-slot="{ dataSource }">
-        <zv-cell
-          v-for="(item, index) in dataSource"
-          :key="index"
-          :title="item"
-        />
-      </template>
-    </zv-list>
+    <zv-tabs v-model="active">
+      <zv-tab v-for="(title, index) in tabs" :title="title" :key="index">
+        <zv-list
+          class="list-wrappar"
+          @handleLoad="onLoad"
+          :data-source="index === 0 ? list : noMoreData"
+        >
+          <template v-slot="{ dataSource }">
+            <zv-cell
+              v-for="(item, index) in dataSource"
+              :key="index"
+              :title="item"
+            />
+          </template>
+        </zv-list>
+      </zv-tab>
+    </zv-tabs>
   </div>
 </template>
 
 <script>
 import ZvList from '../../components/zv-list/index'
-import ZvNavBar from '../../components/zv-nav-bar/index'
 import ZvCell from '../../components/zv-cell/index'
 import * as api from '@/api/test'
+import ZvTabs from '../../components/zv-tabs/index'
+import ZvTab from '../../components/zv-tab/index'
 export default {
   name: 'List',
-  components: { ZvCell, ZvNavBar, ZvList },
+  components: { ZvTab, ZvTabs, ZvCell, ZvList },
   data() {
     return {
-      list: []
+      tabs: ['无限列表', '无数据页面'],
+      list: [],
+      noMoreData: [],
+      active: '0'
     }
   },
   mounted() {
-    // this.loadData()
+    this.loadData()
   },
   methods: {
     loadData() {
@@ -42,8 +54,7 @@ export default {
           obj.callback({ pullAction: obj.pullAction, error: true })
         })
       } else {
-        debugger
-        api.test().then(arr => {
+        api.test({ isHideLoading: true }).then(arr => {
           this.list = this.list.concat(arr)
           obj.callback({ pullAction: obj.pullAction, limit: arr.length })
         })
@@ -57,7 +68,7 @@ export default {
   height: calc(100vh);
   overflow: hidden;
   .list-wrappar {
-    height: calc(100vh - 46px);
+    height: calc(100vh - 88px);
   }
 }
 </style>

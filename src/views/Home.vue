@@ -15,12 +15,11 @@
 </template>
 
 <script>
-import ZvNavBar from '../components/zv-nav-bar/index'
 import ZvCell from '../components/zv-cell/index'
 
 export default {
   name: 'home',
-  components: { ZvCell, ZvNavBar },
+  components: { ZvCell },
   data() {
     return {
       list: [

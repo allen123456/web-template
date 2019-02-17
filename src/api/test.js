@@ -1,10 +1,11 @@
 import request from '@/utils/request'
 
 // 测试
-export function test() {
+export function test(data) {
   return request({
     url: '/test',
-    method: 'post'
+    method: 'post',
+    data
   })
 }
 

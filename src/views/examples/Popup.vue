@@ -6,9 +6,15 @@
       <span>Popup用法</span>
 
       <div class="btn-wrappar">
-        <zv-button plain type="default" size="small" @click="btnClick(0)">中间</zv-button>
-        <zv-button plain type="default" size="small" @click="btnClick(1)">底部</zv-button>
-        <zv-button plain type="default" size="small" @click="btnClick(2)">顶部</zv-button>
+        <zv-button plain type="default" size="small" @click="btnClick(0)">
+          中间
+        </zv-button>
+        <zv-button plain type="default" size="small" @click="btnClick(1)">
+          底部
+        </zv-button>
+        <zv-button plain type="default" size="small" @click="btnClick(2)">
+          顶部
+        </zv-button>
       </div>
     </div>
 
@@ -19,12 +25,11 @@
 </template>
 
 <script>
-import ZvNavBar from '../../components/zv-nav-bar/index'
 import ZvButton from '../../components/zv-button/index'
 import ZvPopUp from '../../components/zv-popup/index'
 export default {
   name: 'Popup',
-  components: { ZvPopUp, ZvButton, ZvNavBar },
+  components: { ZvPopUp, ZvButton },
   data() {
     return {
       base: false,

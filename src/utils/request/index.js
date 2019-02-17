@@ -2,6 +2,7 @@ import vue from 'vue'
 import axios from 'axios'
 import qs from 'qs'
 import store from '@/store'
+import { toast } from 'components/zv-pop/index'
 
 // 创建axios实例
 vue.prototype.$BASE_API = process.env.VUE_APP_BASE_URL
@@ -14,9 +15,14 @@ const service = axios.create({
   }
 })
 
+let loading = null
 // request拦截器
 service.interceptors.request.use(
   config => {
+    // 在请求先展示加载框
+    if (!config.data || !config.data.isHideLoading) {
+      loading = toast({ loading: '加载中...' })
+    }
     // 配置调试
     handleUrl(config)
 
@@ -33,9 +39,13 @@ service.interceptors.request.use(
       delete config.data.isHideLoading
     }
 
+    // 用qs处理参数可以处理options请求（预请求），或者设置'Access-Control-MAX-AGE':'1000'
     if (config.method === 'post') {
       // 设置参数拼接方式
-      if (config.data && config.headers['Content-Type'] === 'application/x-www-form-urlencoded') {
+      if (
+        config.data &&
+        config.headers['Content-Type'] === 'application/x-www-form-urlencoded'
+      ) {
         config.data = qs.stringify(config.data)
       }
     } else {
@@ -54,6 +64,10 @@ service.interceptors.request.use(
 // respone拦截器
 service.interceptors.response.use(
   response => {
+    // 请求响应后关闭加载框
+    if (loading) {
+      loading.clear()
+    }
     // code为非0是抛错 可结合自己业务进行修改
     if (response.status === 200) {
       const res = response.data
@@ -68,6 +82,10 @@ service.interceptors.response.use(
     }
   },
   error => {
+    // 请求响应后关闭加载框
+    if (loading) {
+      loading.clear()
+    }
     // 断网 或者 请求超时 状态
     if (!error.response) {
       // 请求超时状态

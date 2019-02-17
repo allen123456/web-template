@@ -8,11 +8,10 @@
 
 <script>
 import ZvSearch from '../../components/zv-search/index'
-import ZvNavBar from '../../components/zv-nav-bar/index'
 import { toast } from '../../components/zv-pop/index'
 export default {
   name: 'Search',
-  components: { ZvNavBar, ZvSearch },
+  components: { ZvSearch },
   data() {
     return {
       search: ''

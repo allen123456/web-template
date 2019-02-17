@@ -21,13 +21,12 @@
 </template>
 
 <script>
-import ZvNavBar from '../../components/zv-nav-bar/index'
 import ZvPicker from '../../components/zv-picker/index'
 import ZvButton from '../../components/zv-button/index'
 import { toast } from '../../components/zv-pop/index'
 export default {
   name: 'Picker',
-  components: { ZvButton, ZvPicker, ZvNavBar },
+  components: { ZvButton, ZvPicker },
   data() {
     return {
       showPicker: false

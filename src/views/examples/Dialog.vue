@@ -30,11 +30,10 @@
 
 <script>
 import ZvButton from '../../components/zv-button/index'
-import ZvNavBar from '../../components/zv-nav-bar/index'
 import { dialog, toast } from '../../components/zv-pop/index'
 export default {
   name: 'Dialog',
-  components: { ZvNavBar, ZvButton },
+  components: { ZvButton },
   data() {
     return {
       base: false,

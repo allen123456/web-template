@@ -22,10 +22,9 @@
 
 <script>
 import ZvUploader from '../../components/zv-uploader/index'
-import ZvNavBar from '../../components/zv-nav-bar/index'
 export default {
   name: 'Uploader',
-  components: { ZvNavBar, ZvUploader },
+  components: { ZvUploader },
   data() {
     return {
       images: [

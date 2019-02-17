@@ -71,7 +71,9 @@ export default {
       return item.rule ? !!item.rule.required : false
     },
     clickRightIcon(item) {
-      return typeof item.clickRightIcon !== 'function' ? null : item.clickRightIcon()
+      return typeof item.clickRightIcon !== 'function'
+        ? null
+        : item.clickRightIcon()
     },
     handleBlur(index) {
       if (this.forms[index].rule) {

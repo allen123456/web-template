@@ -6,8 +6,12 @@
       <span>文字提示</span>
 
       <div class="btn-wrappar">
-        <zv-button plain type="default" @click="btnClick(0)">文字提示</zv-button>
-        <zv-button plain type="default" @click="btnClick(1)">长文字提示</zv-button>
+        <zv-button plain type="default" @click="btnClick(0)">
+          文字提示
+        </zv-button>
+        <zv-button plain type="default" @click="btnClick(1)">
+          长文字提示
+        </zv-button>
       </div>
     </div>
 
@@ -15,8 +19,12 @@
       <span>成功/失败提示</span>
 
       <div class="btn-wrappar">
-        <zv-button plain type="default" @click="btnClick(2)">成功提示</zv-button>
-        <zv-button plain type="default" @click="btnClick(3)">失败提示</zv-button>
+        <zv-button plain type="default" @click="btnClick(2)">
+          成功提示
+        </zv-button>
+        <zv-button plain type="default" @click="btnClick(3)">
+          失败提示
+        </zv-button>
       </div>
     </div>
 
@@ -24,19 +32,20 @@
       <span>加载提示</span>
 
       <div class="btn-wrappar">
-        <zv-button plain type="default" @click="btnClick(4)">加载提示</zv-button>
+        <zv-button plain type="default" @click="btnClick(4)">
+          加载提示
+        </zv-button>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import ZvNavBar from '../../components/zv-nav-bar/index'
 import { toast } from '../../components/zv-pop/index'
 import ZvButton from '../../components/zv-button/index'
 export default {
   name: 'Toast',
-  components: { ZvButton, ZvNavBar },
+  components: { ZvButton },
   methods: {
     btnClick(index) {
       if (index === 0) {

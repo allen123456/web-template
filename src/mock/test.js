@@ -1,7 +1,7 @@
 export default {
   test: () => {
     let arr = []
-    for (let i = 0; i < 9; i++) {
+    for (let i = 0; i < 20; i++) {
       const text = `${i}`
       arr.push(text)
     }

@@ -12,13 +12,12 @@
 </template>
 
 <script>
-import ZvNavBar from '../../components/zv-nav-bar/index'
 import ZvForm from '../../components/zv-form/index'
 import { toast } from '../../components/zv-pop/index'
 import ZvButton from '../../components/zv-button/index'
 export default {
   name: 'Form',
-  components: { ZvButton, ZvForm, ZvNavBar },
+  components: { ZvButton, ZvForm },
   data() {
     return {
       forms: [
@@ -64,7 +63,9 @@ export default {
     btnClick(index) {
       if (index === 0) {
         this.$refs.ZvForm.onValidate(error => {
-          error ? toast({ message: '验证通过' }) : toast({ message: '验证失败' })
+          error
+            ? toast({ message: '验证通过' })
+            : toast({ message: '验证失败' })
         })
       } else {
         this.$refs.ZvForm.resetFields()

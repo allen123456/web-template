@@ -44,7 +44,12 @@ function toast({ message = '', success = '', fail = '', loading = '' } = {}) {
 
 export { toast }
 
-function notify({ message = '', duration = 1000, background = '#1989fa', color = '#fff' } = {}) {
+function notify({
+  message = '',
+  duration = 1000,
+  background = '#1989fa',
+  color = '#fff'
+} = {}) {
   return Notify({
     message: message,
     duration: duration,

@@ -13,11 +13,9 @@
 
 <script>
 import ZvModel from 'mixins/zv-model'
-import ZvSvgIcon from '../zv-svg/index'
 export default {
   name: 'ZvTabBar',
-  mixins: [ZvModel],
-  components: { ZvSvgIcon }
+  mixins: [ZvModel]
 }
 </script>
 

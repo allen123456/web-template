@@ -13,11 +13,10 @@
 <script>
 import ZvTab from '../../components/zv-tab/index'
 import ZvTabs from '../../components/zv-tabs/index'
-import ZvNavBar from '../../components/zv-nav-bar/index'
 import ZvTabBar from '../../components/zv-tab-bar/index'
 export default {
   name: 'Tab',
-  components: { ZvTabBar, ZvNavBar, ZvTabs, ZvTab },
+  components: { ZvTabBar, ZvTabs, ZvTab },
   data() {
     return {
       active: '0',
