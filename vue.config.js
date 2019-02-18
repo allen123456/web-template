@@ -143,7 +143,7 @@ module.exports = {
         camelCase: 'only'
       },
       sass: {
-        data: `@import "@/assets/styles/zv-color.scss";@import "@/assets/styles/mixin.scss";`
+        data: `@import "@/assets/styles/zv-color.scss";@import "@/assets/styles/mixin.scss";@import "@/assets/styles/vant.scss";`
       }
     }
   }

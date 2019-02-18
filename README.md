@@ -88,19 +88,23 @@
 
 ## 路由
 ```
- .在router文件夹中，为每个模块单独创建一个文件夹。根据不同的业务模块进行拆分路由，在每个子模块中导出一个路由配置数组。
-  在根 index.js中扫描所有的路由并自动加载(若没有及时更新，需重新编译)
+ .根据不同的业务模块进行拆分路由,在每个子模块中导出一个路由配置数组。
+ .在router文件夹中，为每个模块单独创建一个文件夹。router/index.js中扫描所有的
+   路由并自动加载(若新加的路由没有及时生效，需重新编译)
 ```
 
 ## 组件封装
 ```
  .所有公共组件，用zv-包装
  .涉及到业务逻辑的组件，在封装的时候，通过mixin，将业务逻辑代码和基本组件代码区分
- .需要挂载到Vue上的公共组件，统一写在components/global文件夹下，格式参照已有的组件，components/index.js中会自动加载global下的所有组件
+ .需要挂载到Vue上的公共组件，统一写在components/global文件夹下，
+  格式参照已有的组件，components/index.js中会自动加载global下的所有组件
 ```
 
 ## 优化
 ```
+ .开启gzip,配置cdn
+ .首屏加入骨架屏
  .异步路由 { path: '/order', component: () => import('./views/order.vue') }
  .异步组件 export default { components: { HellowWorld: () => import('../components/HelloWorld.vue') } }
  .除非组件1.有预渲染需求；2.需要频繁切换显示状态，否则使用v-if代替v-show

@@ -1,0 +1,4 @@
+/* 无法直接写在组件中的样式 */
+.van-dialog__confirm, .van-dialog__confirm:active {
+  color: $baseColor;
+}
