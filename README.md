@@ -1,21 +1,52 @@
 # 中联前端(移动端)开发基础框架 | [风格指南](./风格指南.md)
 
-## 文件作用：
+## 项目目录结构树：
 ```
- mock：配置假数据
- router: 配置页面路由
- icons: svg相关
- utils
-   -permission: 页面权限控制
-   -request: 请求相关
-   -errorLog: 错误日志
-   -assist: 自定义组件相关方法
-   -index: 基本工具方法
- components 项目公共组件文件夹
- .env.mock: 设置mock环境下，所要的全局属性（定义模拟数据）
- .env.debugger: 设置debugger环境下，所要的全局属性(用于局域网中调试。若后端是微服务，配合debugger.port.js。)
- .env.development: 设置development环境下，所要的全局属性（开发环境）
- .env.production: 设置production环境下，所要的全局属性（生产环境）
+.
+├── src
+│   ├── api
+│   │   └── test.js                api接口调用方法文件
+│   ├── assets
+│   │   ├── img                    公共图片存放文件
+│   │   └── styles                 公共样式存放文件
+│   ├── components
+│   │   ├── global                 公共全局组件存放文件
+│   │   ├── index.js               自动将global中的组件挂载到Vue上
+│   ├── icons
+│   │   ├── index.js               自动将svg文件夹中的svg图标引入项目
+│   │   ├── original_svg           原始svg文件夹，开发中可删除
+│   │   └── svg                    存放用svgo优化过后的svg图标
+│   ├── main.js
+│   ├── mixins                     全局mixin存放文件夹
+│   │   ├── emitter.js             自定义组件方法
+│   │   └── zv-model.js            用来解决组件封装时v-model双层绑定的问题
+│   ├── mock
+│   │   ├── index.js
+│   │   └── test.js                mock数据模块
+│   ├── router
+│   │   └── index.js               自动加载router下的路由模块
+│   ├── store
+│   │   ├── getters.js
+│   │   ├── index.js
+│   │   └── modules                store模块
+│   ├── utils
+│   │   ├── assist.js              自定义组件方法
+│   │   ├── errorLog.js            全局捕获错误方法
+│   │   ├── index.js               一般工具方法
+│   │   ├── permission.js          全局路由权限控制
+│   │   ├── request                封装网络请求
+│   │   └── solution.js            各种疑难杂症解决方法集合
+│   └── views
+│       ├── Home.vue
+│       ├── errorPage              404页面
+│       └── examples               组件示例
+├── vue.config.js
+├── .env.mock                      设置mock环境下，所要的全局属性（定义模拟数据）
+├── .env.debugger                  设置debugger环境下，所要的全局属性(用于局域网中调试。若后端是微服务，配合debugger.port.js。)
+├── .env.development               设置development环境下，所要的全局属性（开发环境）
+├── .env.production                设置production环境下，所要的全局属性（生产环境）
+├── 移动端-UIKit1.1.psd             公共组件视觉稿
+└── 视觉规范.jpg                    移动端视觉规范
 ```
 
 ## 配置项：
@@ -40,6 +71,7 @@
 
 ## 请求
 ```
+ .基于axios封装
  .默认每次请求都会加载请求动画，若是某些接口不需要加载动画，在请求参数中添加isHideLoading，且设置为true
    request({
       url: '/management/maintainRecord/uploadMaintainPic/w/v1',
