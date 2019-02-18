@@ -48,5 +48,10 @@ export default [
     path: '/search',
     name: 'search',
     component: () => import('@/views/examples/Search.vue')
+  },
+  {
+    path: '/svg',
+    name: 'svg',
+    component: () => import('@/views/examples/SvgPage.vue')
   }
 ]

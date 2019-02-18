@@ -1,30 +1,23 @@
 <template>
-  <div>
+  <div class="zv-uploader">
     <zv-nav-bar title="上传"></zv-nav-bar>
 
-    <div class="header">
-      <span>上传</span>
+    <example-wrapper title="上传">
+      <zv-uploader :images="images" />
+    </example-wrapper>
 
-      <div class="btn-wrappar">
-        <zv-uploader :images="images" />
-      </div>
-    </div>
-
-    <div class="header">
-      <span>展示</span>
-
-      <div class="btn-wrappar">
-        <zv-uploader :images="images" is-display />
-      </div>
-    </div>
+    <example-wrapper title="展示">
+      <zv-uploader :images="images" is-display />
+    </example-wrapper>
   </div>
 </template>
 
 <script>
 import ZvUploader from '../../components/zv-uploader/index'
+import ExampleWrapper from './ExampleWrapper'
 export default {
   name: 'Uploader',
-  components: { ZvUploader },
+  components: { ExampleWrapper, ZvUploader },
   data() {
     return {
       images: [
@@ -36,22 +29,12 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-.header {
-  padding-top: 10px;
-  span {
-    display: block;
-    padding-left: 10px;
-    font-size: 14px;
-    color: $zv-212121;
-  }
-  .btn-wrappar {
-    box-sizing: border-box;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding: 5px;
-    margin-bottom: 10px;
+<style lang="scss">
+.zv-uploader {
+  .example-wrapper {
+    .slot-wrapper {
+      justify-content: flex-start;
+    }
   }
 }
 </style>

@@ -80,13 +80,11 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .btn-wrappar {
+  @include flex;
   box-sizing: border-box;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   padding: 5px;
 }
 </style>

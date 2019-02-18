@@ -57,7 +57,7 @@ export default {
         showIndicators: true,
         asyncClose: true,
         onClose() {
-          // do something
+          this.$emit('closeImagePreview')
         }
       })
     }

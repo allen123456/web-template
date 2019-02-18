@@ -1,3 +1,11 @@
+<!--公用组件：列表
+/**
+* @author 刘宇琳
+* @date 2019/2/18
+* @param dataSource：列表数据源
+* 用法：集成了无数据页面、上下拉刷新。参考examples/List.vue
+*/
+-->
 <template>
   <div ref="scrollList" class="zv-list">
     <van-pull-refresh
@@ -28,7 +36,10 @@ export default {
   name: 'ZvList',
   components: { NoMoreData },
   props: {
-    // 页面一次加载多少个数据
+    /** 2019/2/18
+     * @Author: 刘宇琳
+     * @Desc: 页面一次加载多少个数据
+     */
     pageSize: {
       type: Number,
       default: 20
@@ -57,6 +68,10 @@ export default {
     haveData() {
       return this.dataSource.length > 0
     },
+    /** 2019/2/18
+     * @Author: 刘宇琳
+     * @Desc: 检查后台数据是否全部加载完了，显示'没有更多了'提示
+     */
     isFinished() {
       return this.dataSource.length < this.pageSize
     },

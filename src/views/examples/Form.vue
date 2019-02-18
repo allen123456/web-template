@@ -4,10 +4,10 @@
 
     <zv-form ref="ZvForm" :forms="forms"></zv-form>
 
-    <div class="btn-wrappar">
+    <example-wrapper>
       <zv-button type="primary" @click="btnClick(0)">立即创建</zv-button>
       <zv-button plain type="default" @click="btnClick(1)">重置表单</zv-button>
-    </div>
+    </example-wrapper>
   </div>
 </template>
 
@@ -15,9 +15,10 @@
 import ZvForm from '../../components/zv-form/index'
 import { toast } from '../../components/zv-pop/index'
 import ZvButton from '../../components/zv-button/index'
+import ExampleWrapper from './ExampleWrapper'
 export default {
   name: 'Form',
-  components: { ZvButton, ZvForm },
+  components: { ExampleWrapper, ZvButton, ZvForm },
   data() {
     return {
       forms: [
@@ -74,14 +75,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.btn-wrappar {
-  box-sizing: border-box;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 5px;
-}
-</style>

@@ -1,3 +1,11 @@
+<!--公用组件：表单组件
+/**
+* @author 刘宇琳
+* @date 2019/2/18
+* @param
+* 用法：若需要对表单加入验证功能，只需在构造表单数据的时候，添加rule项，详见examples/Form.vue
+*/
+-->
 <template>
   <zv-cell-group>
     <template v-for="(item, index) in forms">
@@ -34,6 +42,7 @@ import Schema from 'async-validator'
 import ZvCellGroup from '../zv-cell-group/index'
 import ZvField from '../zv-field/index'
 import ZvTextarea from '../zv-textarea/index'
+
 export default {
   name: 'ZvForm',
   components: { ZvTextarea, ZvField, ZvCellGroup },
@@ -82,7 +91,7 @@ export default {
     },
     /** 2019/2/15
      * @Author: 刘宇琳
-     * @Desc: 校验数据
+     * @Desc: 校验数据,具体的校验功能，参考async-validator
      */
     validate(index) {
       const that = this

@@ -2,50 +2,39 @@
   <div>
     <zv-nav-bar title="轻提示"></zv-nav-bar>
 
-    <div class="header">
-      <span>文字提示</span>
+    <example-wrapper title="文字提示">
+      <zv-button plain type="default" @click="btnClick(0)">
+        文字提示
+      </zv-button>
+      <zv-button plain type="default" @click="btnClick(1)">
+        长文字提示
+      </zv-button>
+    </example-wrapper>
 
-      <div class="btn-wrappar">
-        <zv-button plain type="default" @click="btnClick(0)">
-          文字提示
-        </zv-button>
-        <zv-button plain type="default" @click="btnClick(1)">
-          长文字提示
-        </zv-button>
-      </div>
-    </div>
+    <example-wrapper title="成功/失败提示">
+      <zv-button plain type="default" @click="btnClick(2)">
+        成功提示
+      </zv-button>
+      <zv-button plain type="default" @click="btnClick(3)">
+        失败提示
+      </zv-button>
+    </example-wrapper>
 
-    <div class="header">
-      <span>成功/失败提示</span>
-
-      <div class="btn-wrappar">
-        <zv-button plain type="default" @click="btnClick(2)">
-          成功提示
-        </zv-button>
-        <zv-button plain type="default" @click="btnClick(3)">
-          失败提示
-        </zv-button>
-      </div>
-    </div>
-
-    <div class="header">
-      <span>加载提示</span>
-
-      <div class="btn-wrappar">
-        <zv-button plain type="default" @click="btnClick(4)">
-          加载提示
-        </zv-button>
-      </div>
-    </div>
+    <example-wrapper title="加载提示">
+      <zv-button plain type="default" @click="btnClick(4)">
+        加载提示
+      </zv-button>
+    </example-wrapper>
   </div>
 </template>
 
 <script>
 import { toast } from '../../components/zv-pop/index'
 import ZvButton from '../../components/zv-button/index'
+import ExampleWrapper from './ExampleWrapper'
 export default {
   name: 'Toast',
-  components: { ZvButton },
+  components: { ExampleWrapper, ZvButton },
   methods: {
     btnClick(index) {
       if (index === 0) {
@@ -66,24 +55,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.header {
-  padding-top: 10px;
-  span {
-    display: block;
-    padding-left: 10px;
-    font-size: 14px;
-    color: $zv-212121;
-  }
-  .btn-wrappar {
-    box-sizing: border-box;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 5px;
-    margin-bottom: 10px;
-  }
-}
-</style>

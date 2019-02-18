@@ -46,13 +46,13 @@ export default {
 .zv-textarea {
   .header {
     box-sizing: border-box;
-    display: flex;
+    @include flex($justifyContent: space-between);
     height: 44px;
     margin: 0 15px;
-    justify-content: space-between;
-    align-items: center;
     color: $zv-212121;
-    font-size: 14px;
+    span {
+      font-size: 14px;
+    }
     .van-icon {
       color: $baseColor;
     }

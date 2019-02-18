@@ -1,7 +1,7 @@
 <template>
   <div class="zv-tabs">
     <van-tabs
-      ref="zv-tabs"
+      ref="zvTabs"
       v-model="currentValue"
       swipeable
       :line-width="20"

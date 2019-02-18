@@ -32,7 +32,8 @@ export default {
         { title: 'Picker', isLink: true, url: 'picker' },
         { title: 'Popup', isLink: true, url: 'popup' },
         { title: '列表', isLink: true, url: 'list' },
-        { title: '搜索', isLink: true, url: 'search' }
+        { title: '搜索', isLink: true, url: 'search' },
+        { title: 'SVG图标集', isLink: true, url: 'svg' }
       ]
     }
   }
