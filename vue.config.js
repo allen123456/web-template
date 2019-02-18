@@ -3,6 +3,9 @@ const debug = process.env.NODE_ENV !== 'production'
 const path = require('path')
 const CompressionPlugin = require('compression-webpack-plugin')
 const SkeletonWebpackPlugin = require('vue-skeleton-webpack-plugin')
+const utils = require('./build/utils')
+
+const baseUrl = debug ? '/' : '/'
 
 function resolve(dir) {
   return path.join(__dirname, './', dir)
@@ -16,50 +19,24 @@ const externals = {
   axios: 'axios'
 }
 
-const cdn = {
-  // 开发环境
-  dev: {
-    css: [],
-    js: []
-  },
-  // 生产环境
-  build: {
-    css: [],
-    js: [
-      '//cdn.jsdelivr.net/npm/vue@2.6.4/dist/vue.min.js',
-      '//cdn.jsdelivr.net/npm/vue-router@3.0.1/dist/vue-router.min.js',
-      '//cdn.jsdelivr.net/npm/vuex@3.0.1/dist/vuex.min.js',
-      '//cdn.jsdelivr.net/npm/axios@0.18.0/dist/axios.min.js'
-    ]
-  }
-}
-
 module.exports = {
   // 基本路径 rent/
-  publicPath: debug ? '/' : '/',
+  publicPath: baseUrl,
   // 输出文件目录
   outputDir: 'dist',
   assetsDir: 'assets', // 静态资源目录 (js, css, img, fonts)
   lintOnSave: true, // 是否开启eslint保存检测，有效值：ture | false | 'error'
   runtimeCompiler: true, // 运行时版本是否需要编译
   productionSourceMap: false,
+  pages: utils.setPages(),
   chainWebpack: config => {
     // 移除 prefetch 插件
     config.plugins.delete('prefetch')
-    /**
-     * 添加CDN参数到htmlWebpackPlugin配置中， 详见public/index.html 修改
-     */
-    config.plugin('html').tap(args => {
-      if (process.env.NODE_ENV === 'production') {
-        args[0].cdn = cdn.build
-      } else {
-        args[0].cdn = cdn.dev
-      }
-      return args
-    })
 
     // 配置别名
-    config.resolve.alias.set('components', resolve('src/components')).set('mixins', resolve('src/mixins'))
+    config.resolve.alias
+      .set('components', resolve('src/components'))
+      .set('mixins', resolve('src/mixins'))
 
     if (process.env.NODE_ENV === 'production') {
       // 生产环境不打包externals下的资源
@@ -117,6 +94,12 @@ module.exports = {
   },
   // webpack-dev-server 相关配置
   devServer: {
+    historyApiFallback: {
+      rewrites: [
+        { from: new RegExp(baseUrl + 'page1'), to: baseUrl + 'page1.html' },
+        { from: new RegExp(baseUrl + 'page2'), to: baseUrl + 'page2.html' }
+      ]
+    },
     open: true,
     host: '0.0.0.0',
     port: 8000,
