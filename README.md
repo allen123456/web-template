@@ -50,6 +50,15 @@
     * @Author: 刘宇琳
     * @Desc: 描述
     */
+
+    <!--公用组件：列表
+    /**
+    * @author 刘宇琳
+    * @date 2019/2/18
+    * @param dataSource：列表数据源
+    * 用法：集成了无数据页面、上下拉刷新。参考examples/List.vue
+    */
+    -->
  .代码规则与风格：eslint+prettier
 ```
 
@@ -71,8 +80,9 @@
 
 ## 路由
 ```
- .在router文件夹中，为每个模块单独创建一个文件夹。根据不同的业务模块进行拆分路由，在每个子模块中导出一个路由配置数组。
-  在根 index.js中扫描所有的路由并自动加载(需重新编译)
+ .根据不同的业务模块进行拆分路由,在每个子模块中导出一个路由配置数组。
+ .在router文件夹中，为每个模块单独创建一个文件夹。router/index.js中扫描所有的
+   路由并自动加载(若新加的路由没有及时生效，需重新编译)
 ```
 
 ## 组件封装
@@ -84,6 +94,8 @@
 
 ## 优化
 ```
+ .开启gizp，配置cdn
+ .首屏加入骨架屏
  .异步路由 { path: '/order', component: () => import('./views/order.vue') }
  .异步组件 export default { components: { HellowWorld: () => import('../components/HelloWorld.vue') } }
  .除非组件1.有预渲染需求；2.需要频繁切换显示状态，否则使用v-if代替v-show
