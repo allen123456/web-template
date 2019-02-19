@@ -106,8 +106,12 @@ export default {
      * @Desc: pullAction: 当前是上拉还是下拉操作 limit: 当前返回的数据条数 error: 当前请求是否报错
      */
     callback({ pullAction = '', limit = 0, error = false } = {}) {
-      this.isFrist = false
       if (!error) {
+        if (this.isFrist) {
+          this.$nextTick(() => {
+            this.isFrist = false
+          })
+        }
         if (pullAction === 'pullingUp') {
           this.loading = false
           this.finished = limit < this.pageSize
@@ -117,6 +121,7 @@ export default {
         }
       } else {
         if (pullAction === 'pullingUp') {
+          this.loading = false
           this.error = true
         } else if (pullAction === 'pullingDown') {
           this.refreshing = false

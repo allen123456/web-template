@@ -47,10 +47,14 @@ export default {
         })
       } else {
         api.test({ isHideLoading: true }).then(arr => {
-          setTimeout(() => {
-            this.list = this.list.concat(arr)
-          }, 3000)
-          obj.callback({ pullAction: obj.pullAction, limit: arr.length })
+          if (arr) {
+            setTimeout(() => {
+              this.list = this.list.concat(arr)
+              obj.callback({ pullAction: obj.pullAction, limit: arr.length })
+            }, 3000)
+          } else {
+            obj.callback({ pullAction: obj.pullAction, error: true })
+          }
         })
       }
     }

@@ -104,6 +104,34 @@ module.exports = {
     // 开发环境配置
     if (debug) {
       config.devtool = '#source-map'
+    } else {
+      // splitChunk 配置
+      // 将每个依赖包打包成单独的js文件
+      // let optimization = {
+      //   runtimeChunk: 'single',
+      //   splitChunks: {
+      //     chunks: 'all',
+      //     maxInitialRequests: Infinity,
+      //     minSize: 20000,
+      //     cacheGroups: {
+      //       vendor: {
+      //         test: /[\\/]node_modules[\\/]/,
+      //         name(module) {
+      //           // get the name. E.g. node_modules/packageName/not/this/part.js
+      //           // or node_modules/packageName
+      //           const packageName = module.context.match(
+      //             /[\\/]node_modules[\\/](.*?)([\\/]|$)/
+      //           )[1]
+      //           // npm package names are URL-safe, but some servers don't like @ symbols
+      //           return `npm.${packageName.replace('@', '')}`
+      //         }
+      //       }
+      //     }
+      //   }
+      // }
+      // Object.assign(config, {
+      //   optimization
+      // })
     }
 
     // 配置骨架屏
@@ -111,11 +139,11 @@ module.exports = {
       new SkeletonWebpackPlugin({
         webpackConfig: {
           entry: {
-            app: resolve('src/components/zv-skeleton/index.js')
+            app: resolve('./src/components/zv-skeleton/index.js')
           }
         },
-        minimize: true,
-        quiet: true
+        quiet: true,
+        minimize: true
       })
     )
   },
