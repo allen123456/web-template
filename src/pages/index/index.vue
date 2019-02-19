@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <zv-svg-icon icon-class="drag" />
     <a @click="goFn('')">Index</a> | <a @click="goFn('page1')">Page1</a> |
     <a @click="goFn('page2')">Page2</a> |
     <router-view />

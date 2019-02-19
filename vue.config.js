@@ -3,7 +3,7 @@ const debug = process.env.NODE_ENV !== 'production'
 const path = require('path')
 const CompressionPlugin = require('compression-webpack-plugin')
 const SkeletonWebpackPlugin = require('vue-skeleton-webpack-plugin')
-const utils = require('./build/utils')
+let glob = require('glob')
 
 const baseUrl = debug ? '/' : '/'
 
@@ -19,6 +19,31 @@ const externals = {
   axios: 'axios'
 }
 
+//配置pages多页面获取当前文件夹下的html和js
+function getEntry(globPath) {
+  let entries = {},
+    basename,
+    tmp,
+    pathname
+
+  glob.sync(globPath).forEach(function(entry) {
+    basename = path.basename(entry, path.extname(entry))
+    tmp = entry.split('/').splice(-3)
+    pathname = basename // 正确输出js和html的路径
+
+    entries[pathname] = {
+      entry: 'src/' + tmp[0] + '/' + tmp[1] + '/' + tmp[1] + '.js',
+      template: 'src/' + tmp[0] + '/' + tmp[1] + '/' + tmp[2],
+      title: tmp[2],
+      filename: tmp[2],
+      chunks: ['chunk-vendors', 'chunk-common', tmp[1]]
+    }
+  })
+  return entries
+}
+
+let pages = getEntry('./src/pages/**?/*.html')
+
 module.exports = {
   // 基本路径 rent/
   publicPath: baseUrl,
@@ -28,10 +53,9 @@ module.exports = {
   lintOnSave: true, // 是否开启eslint保存检测，有效值：ture | false | 'error'
   runtimeCompiler: true, // 运行时版本是否需要编译
   productionSourceMap: false,
-  pages: utils.setPages(),
+  pages,
   chainWebpack: config => {
-    // 移除 prefetch 插件
-    config.plugins.delete('prefetch')
+    config.plugins.delete('named-chunks')
 
     // 配置别名
     config.resolve.alias
@@ -77,6 +101,30 @@ module.exports = {
     // 开发环境配置
     if (debug) {
       config.devtool = '#source-map'
+    }
+
+    // splitChunk 配置
+    const splitChunksConfig = {
+      cacheGroups: {
+        vendors: {
+          name: 'chunk-vendors',
+          test: /[\\/]node_modules[\\/]/,
+          priority: -10,
+          chunks: 'initial',
+          minChunks: 2
+        },
+        common: {
+          name: 'chunk-common',
+          minChunks: 2,
+          priority: -20,
+          chunks: 'initial',
+          reuseExistingChunk: true
+        }
+      }
+    }
+
+    if (process.env.NODE_ENV === 'production') {
+      config.optimization.splitChunks = splitChunksConfig
     }
 
     // 配置骨架屏

@@ -1,46 +1,40 @@
-# 中联前端开发基础框架 | [风格指南](./风格指南.md)
+# 中联前端开发基础框架（多页面应用） | [风格指南](./风格指南.md)
 
 ## 项目目录结构树：
 ```
  .
  ├── src
  │   ├── api
- │   │   └── test.js                api接口调用方法文件
+ │   │   └── test.js
  │   ├── assets
- │   │   ├── img                    公共图片存放文件
- │   │   └── styles                 公共样式存放文件
+ │   │   ├── img
+ │   │   └── logo.png
+ │   ├── common                           多页面公共配置文件
+ │   │   ├── index.js
+ │   │   └── navigator.js                 多页面导航功能封装
  │   ├── components
- │   │   ├── global                 公共全局组件存放文件
- │   │   ├── index.js               自动将global中的组件挂载到Vue上
+ │   │   ├── global
+ │   │   ├── index.js
+ │   │   └── zv-skeleton
  │   ├── icons
- │   │   ├── index.js               自动将svg文件夹中的svg图标引入项目
- │   │   └── svg                    存放用svg图标
- │   ├── main.js
- │   ├── mixins                     全局mixin存放文件夹
- │   │   └── emitter.js             自定义组件方法
+ │   │   ├── index.js
+ │   │   └── svg
+ │   ├── mixins
+ │   │   └── emitter.js
  │   ├── mock
  │   │   ├── index.js
- │   │   └── test.js                mock数据模块
- │   ├── router
- │   │   └── index.js               自动加载router下的路由模块
- │   ├── store
- │   │   ├── getters.js
- │   │   ├── index.js
- │   │   └── modules                store模块
- │   ├── utils
- │   │   ├── assist.js              自定义组件方法
- │   │   ├── errorLog.js            全局捕获错误方法
- │   │   ├── index.js               一般工具方法
- │   │   ├── permission.js          全局路由权限控制
- │   │   └── request                封装网络请求
- │   └── views
- │       ├── Home.vue
- │       └── errorPage              404页面
+ │   │   └── test.js
+ │   ├── pages
+ │   │   ├── index                        具体页面模块文件夹
+ │   │   ├── page1                        具体页面模块文件夹
+ │   │   └── page2                        具体页面模块文件夹
+ │   └── utils
+ │       ├── assist.js
+ │       ├── errorLog.js
+ │       ├── index.js
+ │       └── request
  ├── vue.config.js
- ├── .env.mock                      设置mock环境下，所要的全局属性（定义模拟数据）
- ├── .env.debugger                  设置debugger环境下，所要的全局属性(用于局域网中调试。若后端是微服务，配合debugger.port.js。)
- ├── .env.development               设置development环境下，所要的全局属性（开发环境）
- └── .env.production                设置production环境下，所要的全局属性（生产环境）
+ └── 风格指南.md
 ```
 
 ## 配置项：
@@ -80,9 +74,7 @@
 
 ## 路由
 ```
- .根据不同的业务模块进行拆分路由,在每个子模块中导出一个路由配置数组。
- .在router文件夹中，为每个模块单独创建一个文件夹。router/index.js中扫描所有的
-   路由并自动加载(若新加的路由没有及时生效，需重新编译)
+ .多页面应用，每个模块各自创建路由管理文件
 ```
 
 ## 组件封装
