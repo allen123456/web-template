@@ -15,12 +15,13 @@
     >
       <van-list
         v-model="loading"
+        :offset="100"
         :finished="isFinished"
         finished-text="没有更多了"
         :error.sync="error"
         error-text="请求失败，点击重新加载"
-        :immediate-check="false"
         @load="handleLoad('pullingUp')"
+        :immediate-check="immediateCheck"
       >
         <slot :dataSource="dataSource" />
       </van-list>
@@ -49,6 +50,10 @@ export default {
       default() {
         return []
       }
+    },
+    immediateCheck: {
+      type: Boolean,
+      default: true
     }
   },
   data() {
@@ -57,6 +62,7 @@ export default {
       refreshing: false,
       error: false,
       loading: false,
+      isFrist: true,
       noDataHeight: { height: this.computedHeight }
     }
   },
@@ -66,14 +72,14 @@ export default {
      * @Desc: 是否有数据，以便判断是否出现无数据页面
      */
     haveData() {
-      return this.dataSource.length > 0
+      return this.isFrist || this.dataSource.length > 0
     },
     /** 2019/2/18
      * @Author: 刘宇琳
      * @Desc: 检查后台数据是否全部加载完了，显示'没有更多了'提示
      */
     isFinished() {
-      return this.dataSource.length < this.pageSize
+      return this.isFrist ? false : this.dataSource.length < this.pageSize
     },
     /** 2019/2/17
      * @Author: 刘宇琳
@@ -81,7 +87,6 @@ export default {
      */
     computedHeight() {
       if (this.$refs.scrollList) {
-        debugger
         const scrollHeight = this.$refs.scrollList.$el.clientHeight
         return `${scrollHeight}px`
       }
@@ -101,6 +106,7 @@ export default {
      * @Desc: pullAction: 当前是上拉还是下拉操作 limit: 当前返回的数据条数 error: 当前请求是否报错
      */
     callback({ pullAction = '', limit = 0, error = false } = {}) {
+      this.isFrist = false
       if (!error) {
         if (pullAction === 'pullingUp') {
           this.loading = false

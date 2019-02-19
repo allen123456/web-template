@@ -39,15 +39,7 @@ export default {
       active: '0'
     }
   },
-  mounted() {
-    this.loadData()
-  },
   methods: {
-    loadData() {
-      api.test().then(arr => {
-        this.list = arr
-      })
-    },
     onLoad(obj) {
       if (obj.pullAction === 'pullingDown') {
         api.error().then(() => {
@@ -55,7 +47,9 @@ export default {
         })
       } else {
         api.test({ isHideLoading: true }).then(arr => {
-          this.list = this.list.concat(arr)
+          setTimeout(() => {
+            this.list = this.list.concat(arr)
+          }, 3000)
           obj.callback({ pullAction: obj.pullAction, limit: arr.length })
         })
       }
