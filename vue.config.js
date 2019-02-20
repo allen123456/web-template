@@ -104,35 +104,36 @@ module.exports = {
     }
 
     // splitChunk 配置
-    const splitChunksConfig = {
-      cacheGroups: {
-        vendors: {
-          name: 'chunk-vendors',
-          test: /[\\/]node_modules[\\/]/,
-          priority: -10,
-          chunks: 'initial',
-          minChunks: 2
-        },
-        common: {
-          name: 'chunk-common',
-          minChunks: 2,
-          priority: -20,
-          chunks: 'initial',
-          reuseExistingChunk: true
-        }
-      }
-    }
+    // const splitChunksConfig = {
+    //   cacheGroups: {
+    //     vendors: {
+    //       name: 'chunk-vendors',
+    //       test: /[\\/]node_modules[\\/]/,
+    //       priority: -10,
+    //       chunks: 'initial',
+    //       minChunks: 2
+    //     },
+    //     common: {
+    //       name: 'chunk-common',
+    //       minChunks: 2,
+    //       priority: -20,
+    //       chunks: 'initial',
+    //       reuseExistingChunk: true
+    //     }
+    //   }
+    // }
 
-    if (process.env.NODE_ENV === 'production') {
-      config.optimization.splitChunks = splitChunksConfig
-    }
+    // if (process.env.NODE_ENV === 'production') {
+    //   config.optimization.splitChunks = splitChunksConfig
+    // }
 
     // 配置骨架屏
     config.plugins.push(
       new SkeletonWebpackPlugin({
         webpackConfig: {
           entry: {
-            app: resolve('src/components/zv-skeleton/index.js')
+            page1: resolve('src/pages/page1/components/skeleton/entry-skeleton.js'),
+            page2: resolve('src/pages/page2/components/skeleton/entry-skeleton.js')
           }
         },
         minimize: true,
