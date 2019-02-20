@@ -27,11 +27,11 @@ const cdn = {
   build: {
     css: [],
     js: [
-      '//cdn.jsdelivr.net/npm/vue@2.6.4/dist/vue.min.js',
-      '//cdn.jsdelivr.net/npm/vue-router@3.0.1/dist/vue-router.min.js',
-      '//cdn.jsdelivr.net/npm/vuex@3.0.1/dist/vuex.min.js',
-      '//cdn.jsdelivr.net/npm/axios@0.18.0/dist/axios.min.js',
-      '//cdn.jsdelivr.net/npm/vant@1.6.1/lib/vant.min.js'
+      'https://cdn.jsdelivr.net/npm/vue@2.6.4/dist/vue.min.js',
+      'https://cdn.jsdelivr.net/npm/vue-router@3.0.1/dist/vue-router.min.js',
+      'https://cdn.jsdelivr.net/npm/vuex@3.0.1/dist/vuex.min.js',
+      'https://cdn.jsdelivr.net/npm/axios@0.18.0/dist/axios.min.js',
+      'https://cdn.jsdelivr.net/npm/vant@1.6.1/lib/vant.min.js'
     ]
   }
 }
