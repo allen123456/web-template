@@ -71,6 +71,7 @@
 
 ## 请求
 ```
+ .基于axios封装
  .默认每次请求都会加载请求动画，若是某些接口不需要加载动画，在请求参数中添加isHideLoading，且设置为true
    request({
       url: '/management/maintainRecord/uploadMaintainPic/w/v1',
@@ -94,7 +95,6 @@
 
 ## 组件封装
 ```
- .基于axios封装
  .所有公共组件，用zv-包装
  .涉及到业务逻辑的组件，在封装的时候，通过mixin，将业务逻辑代码和基本组件代码区分
 ```
