@@ -138,6 +138,15 @@ module.exports = {
     // 开启 CSS source maps?
     sourceMap: false,
     // 启用 CSS modules for all css / pre-processor files.
-    modules: false
+    modules: false,
+    loaderOptions: {
+      css: {
+        localIdentName: '[name]-[hash]',
+        camelCase: 'only'
+      },
+      sass: {
+        data: `@import "@/assets/styles/color.scss";`
+      }
+    }
   }
 }

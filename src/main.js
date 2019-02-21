@@ -10,6 +10,7 @@ import './icons'
 import './utils/permission'
 import './utils/errorLog'
 import './components/index'
+import './assets/styles/index.scss'
 
 Vue.use(ElementUI, {
   size: 'medium', // set element-ui default size
@@ -23,24 +24,9 @@ if (process.env.NODE_ENV === 'mock') {
 
 Vue.config.productionTip = false
 
-const app = new Vue({
-  components: {
-    App
-  },
-  router,
+new Vue({
   store,
+  router,
   i18n,
   render: h => h(App)
-})
-
-window.mountApp = () => {
-  app.$mount('#app')
-}
-
-if (process.env.NODE_ENV === 'production') {
-  if (window.STYLE_READY) {
-    window.mountApp()
-  }
-} else {
-  window.mountApp()
-}
+}).$mount('#app')

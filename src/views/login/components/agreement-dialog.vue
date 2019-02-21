@@ -1,0 +1,2809 @@
+<template>
+  <zl-dialog :title="'中联e管家软件许可及服务协议'" class="arreement-dialog" @close="close">
+    <template slot="main">
+      <div class="WordSection1" style="layout-grid:15.6pt">
+        <p
+          class="MsoNormal"
+          align="center"
+          style="text-align:center;line-height:150%;
+mso-pagination:widow-orphan;mso-outline-level:1;background:#F1F1F1"
+        >
+          <b>
+            <span
+              style="font-size:14.0pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+18.0pt"
+              >中联e管家 <span lang="EN-US"></span>软件许可及服务协议
+              <span lang="EN-US"></span>
+            </span>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b
+            style="mso-bidi-font-weight:
+normal"
+          >
+            <u>
+              <span
+                style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:
+宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:
+minor-fareast;mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;
+mso-font-kerning:0pt"
+                >欢迎你使用中联e管家 <span lang="EN-US"></span>软件及服务！
+                <span lang="EN-US"></span>
+              </span>
+            </u>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b
+            style="mso-bidi-font-weight:
+normal"
+          >
+            <u>
+              <span
+                style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:
+宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:
+minor-fareast;mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;
+mso-font-kerning:0pt"
+                >中科云谷科技有限公司（以下简称中科云谷）此特别提醒用户认真阅读、充分理解本《中联e管家软件许可及服务协议
+                <span lang="EN-US"></span>》（下称“本协议”）
+                <span lang="EN-US">--- </span
+                >你应认真阅读、充分理解本协议中各条款，包括免除或者限制中科云谷责任的免责条款及对用户的权利限制条款，以及开通或使用某项服务的单独协议，请你审慎阅读并选择接受或不接受本协议（未成年人应在法定监护人陪同下阅读）。除非你接受本协议所有条款，否则你无权下载、安装或使用中联e管家
+                <span lang="EN-US"></span
+                >软件（以下简称“本软件”）及其相关服务。你的下载、安装、使用、帐号获取和登录等行为将视为对本协议的接受，并同意接受协议各项条款的约束。
+                <span lang="EN-US"></span>
+              </span>
+            </u>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b
+            style="mso-bidi-font-weight:
+normal"
+          >
+            <u>
+              <span
+                style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:
+宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:
+minor-fareast;mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;
+mso-font-kerning:0pt"
+                >本协议是你与中科云谷之间关于用户下载、安装、使用、复制本软件；注册、使用、管理中联e管家帐号；以及使用中联e管家相关服务所订立的协议。本协议描述中科云谷与你之间关于“软件”许可使用及服务相关方面的权利义务。“用户”是指通过中科云谷提供的获取软件授权和帐号注册的途径获得软件产品及号码授权许可以及使用中科云谷相关服务的个人或组织。
+                <span lang="EN-US"></span>
+              </span>
+            </u>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b
+            style="mso-bidi-font-weight:
+normal"
+          >
+            <u>
+              <span
+                style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:
+宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:
+minor-fareast;mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;
+mso-font-kerning:0pt"
+                >本协议可由中科云谷随时更新，更新后的协议条款一旦公布即代替原来的协议条款，恕不再另行通知。用户可重新下载安装本软件或网站查阅最新版协议条款。在中科云谷修改本协议条款后，如果用户不接受修改后的条款，请立即停止使用中科云谷提供的软件和服务，用户继续使用中科云谷提供的软件和服务将被视为已接受了修改后的协议。
+                <span lang="EN-US"></span>
+              </span>
+            </u>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b>
+            <span
+              style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+              >一、协议的范围</span
+            >
+          </b>
+          <b style="mso-bidi-font-weight:normal">
+            <span
+              lang="EN-US"
+              style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            ></span>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+            >1.1&nbsp;</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:150%;
+font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >协议适用主体范围
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <span
+            style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >本协议是你与中科云谷之间关于你下载、安装、使用、复制本软件，以及使用中科云谷相关服务所订立的协议。
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <span
+            style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >“中联e管家
+            <span lang="EN-US"></span
+            >”是指中科云谷及其相关服务可能存在的运营关联单位。“用户”是指使用中科云谷相关服务的使用人，本协议中更多地称为“你”。
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p class="MsoNormal" style="line-height:150%">
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast"
+            >1.2</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:
+150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast"
+            >本协议项下的服务是中科云谷向用户提供的包括但不限电子围栏、设备管理、项目管理、查阅资讯、、电子商务和发布设备出租信息以及求租信息等产品及服务。
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p class="MsoNormal" style="line-height:150%">
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast"
+            >1.3</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:
+150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast"
+            >你在使用中科云谷某一特定服务时，该服务可能会另有单独的协议、相关业务规则等（以下统称为“单独协议”）。上述内容一经正式发布，即为本协议不可分割的组成部分，你同样应当遵守。你对前述任何业务规则、单独协议的接受，即视为你对本协议全部的接受。
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p class="MsoNormal" style="line-height:150%">
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast"
+            >1.4</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:
+150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast"
+            >用户在通过装备
+            <span lang="EN-US">e</span
+            >通发布出租或者求租信息的时候，必须按照规定上传个人身份证完善个人资料（企业用户按要求上传营业执照完善公司资料），资料必须真实有效；发布出租信息必须按要求真实填写设备信息（设备型号、年份、设备所在地、新旧程度和租赁价格以及租赁方式等）、图片必须实拍、如实描写设备的工况和设备的缺陷及问题；发布设备求租信息必须按装备
+            <span lang="EN-US">e</span
+            >通的要求填写所需设备的型号、新旧程度、地址、求租时长、求租价格等对求租设备详细要求；装备
+            <span lang="EN-US">e</span
+            >通只提供发布设备出租和求租的信息平台，在业务合作的过程中发生的一切纠纷和债权问题均由求租方和租赁方自行协商解决。</span
+          >
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;
+mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:
+minor-fareast;mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;
+mso-font-kerning:0pt"
+          ></span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b>
+            <span
+              style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+              >二、关于本服务</span
+            >
+          </b>
+          <b style="mso-bidi-font-weight:normal">
+            <span
+              lang="EN-US"
+              style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            ></span>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+            >2.1&nbsp;</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:150%;
+font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >特别提醒
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <span
+            style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >本服务内容是指中科云谷向用户提供安装在移动设备上方便用户管理、监控工程机械设备的管理工具，本服务提供的具体功能包括但不限于设备管理、项目管理、维修指南、电子围栏、配件销售、资讯、在线报修和消息中心等功能和服务（以下简称“本服务”）。
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+            >2.2&nbsp;</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:150%;
+font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >本服务的形式
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b>
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+                >2.2.1&nbsp;</span
+              >
+            </u>
+          </b>
+          <b>
+            <u>
+              <span
+                style="mso-bidi-font-size:10.5pt;
+line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+                >你使用本服务需要下载中联e管家
+                <span lang="EN-US"></span
+                >客户端软件。对于本软件，中科云谷给予你一项个人的、不可转让及非排他性的许可。
+                <span style="color:black;mso-themecolor:text1"
+                  >中联e管家
+                  <span lang="EN-US"></span
+                  >软件包含的服务或功能不符合你的使用需求时，你可以通过中联e管家
+                  <span lang="EN-US"></span>提供的卸载程序卸载相关服务或软件。
+                  <span lang="EN-US"></span>
+                </span>
+              </span>
+            </u>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+            >2.2.2&nbsp;</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:150%;
+font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >本服务中中联e管家 <span lang="EN-US"></span>客户端软件提供包括但不限于
+            <span lang="EN-US">IOS</span>、
+            <span lang="EN-US">Android</span
+            >两个应用版本，用户必须选择与所安装终端设备相匹配的软件版本。
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+            >2.3&nbsp;</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:150%;
+font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >本服务许可的范围
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+            >2.3.1&nbsp;</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:150%;
+font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >中科云谷给予你一项个人的、不可转让及非排他性的许可，以使用本软件。你可以以使用非商业目的在单一移动设备上安装、使用、显示、运行本软件。
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+            >2.3.2&nbsp;</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:150%;
+font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >本条及本协议其他条款未明示授权的其他一切权利仍由中科云谷保留，你在行使这些权利时须另外取得中科云谷的书面许可。中科云谷如果未行使前述任何权利，并不构成对该权利的放弃。
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b>
+            <span
+              style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+              >三、软件的获取</span
+            >
+          </b>
+          <b style="mso-bidi-font-weight:normal">
+            <span
+              lang="EN-US"
+              style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            ></span>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+            >3.1&nbsp;</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:150%;
+font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >你可以直接从中科云谷的网站上获取本软件，也可以从得到中科云谷授权的第三方获取。
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b>
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+                >3.2&nbsp;</span
+              >
+            </u>
+          </b>
+          <b>
+            <u>
+              <span
+                style="mso-bidi-font-size:10.5pt;
+line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+                >如果你从未经中科云谷授权的第三方获取本软件或与本软件名称相同的安装程序，中科云谷无法保证该软件能够正常使用，并对因此给你造成的损失不予负责。</span
+              >
+            </u>
+          </b>
+          <b style="mso-bidi-font-weight:normal">
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+              ></span>
+            </u>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b>
+            <span
+              style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+              >四、软件的安装与卸载</span
+            >
+          </b>
+          <b style="mso-bidi-font-weight:normal">
+            <span
+              lang="EN-US"
+              style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            ></span>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b
+            style="mso-bidi-font-weight:
+normal"
+          >
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:10.5pt;line-height:150%;
+font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+                >4.1&nbsp;</span
+              >
+            </u>
+          </b>
+          <b style="mso-bidi-font-weight:normal">
+            <u>
+              <span
+                style="mso-bidi-font-size:10.5pt;
+line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+                >下载安装程序后，你需要按照该程序提示的步骤正确安装。
+                <span lang="EN-US"></span>
+              </span>
+            </u>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b
+            style="mso-bidi-font-weight:
+normal"
+          >
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:10.5pt;line-height:150%;
+font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+                >4.2&nbsp;</span
+              >
+            </u>
+          </b>
+          <b style="mso-bidi-font-weight:normal">
+            <u>
+              <span
+                style="mso-bidi-font-size:10.5pt;
+line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+                >为提供更加优质、安全的服务，在本软件安装时中科云谷可能推荐你安装其他软件，你可以选择安装或不安装。
+                <span lang="EN-US"></span>
+              </span>
+            </u>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b
+            style="mso-bidi-font-weight:
+normal"
+          >
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:10.5pt;line-height:150%;
+font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+                >4.3&nbsp;</span
+              >
+            </u>
+          </b>
+          <b style="mso-bidi-font-weight:normal">
+            <u>
+              <span
+                style="mso-bidi-font-size:10.5pt;
+line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+                >如果你不再需要使用本软件或者需要安装新版软件，可以自行卸载。如果你愿意帮助中科云谷改进产品服务，请告知卸载的原因。
+                <span lang="EN-US"></span>
+              </span>
+            </u>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b
+            style="mso-bidi-font-weight:
+normal"
+          >
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:10.5pt;line-height:150%;
+font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+                >4.4
+                <span style="mso-spacerun:yes">&nbsp; </span>
+              </span>
+            </u>
+          </b>
+          <b
+            style="mso-bidi-font-weight:
+normal"
+          >
+            <u>
+              <span
+                style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:
+宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:
+minor-fareast;mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;
+mso-font-kerning:0pt"
+                >本软件为免费软件，使用本软件由用户承担风险，你应具备本软件产品运行所需的条件，必须保证有权使用
+                <span lang="EN-US">IOS/</span>
+              </span>
+            </u>
+          </b>
+          <b style="mso-bidi-font-weight:normal">
+            <span
+              lang="EN-US"
+              style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;
+mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:
+minor-fareast;mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;
+mso-font-kerning:0pt"
+              >Android</span
+            >
+          </b>
+          <b style="mso-bidi-font-weight:normal">
+            <u>
+              <span
+                style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+                >操作系统及相关组件等。在适用法律允许的最大范围内，中科云谷在任何情况下不就用户因使用或不能使用本软件产品发生的特殊的、意外的、直接的或间接的侵权或遭到的损失承担风赔偿责任。即使已事先告知该损害发生的可能性。
+                <span lang="EN-US"></span>
+              </span>
+            </u>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b>
+            <span
+              style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+              >五、软件的更新</span
+            >
+          </b>
+          <b style="mso-bidi-font-weight:normal">
+            <span
+              lang="EN-US"
+              style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            ></span>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+            >5.1&nbsp;</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:150%;
+font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >为了改善用户体验、完善服务内容，中科云谷将不断努力开发新的服务，并为你不时提供软件更新（这些更新可能会采取软件替换、修改、功能强化、版本升级等形式）。
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+            >5.2&nbsp;</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:150%;
+font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >为了保证本软件及服务的安全性和功能的一致性，中科云谷有权不经向你特别通知而对软件进行更新，或者对软件的部分功能效果进行改变或限制。
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+            >5.3&nbsp;</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:150%;
+font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >本软件新版本发布后，旧版本的软件可能无法使用。中科云谷不保证旧版本软件继续可用及相应的客户服务，请你随时核对并下载最新版本。
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b>
+            <span
+              style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+              >六、用户个人信息保护</span
+            >
+          </b>
+          <b style="mso-bidi-font-weight:normal">
+            <span
+              lang="EN-US"
+              style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            ></span>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+            >6.1&nbsp;</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:150%;
+font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >保护用户个人信息是中科云谷的一项基本原则，中科云谷将会采取合理的措施保护用户的个人信息。除法律法规规定的情形外，未经用户许可中科云谷不会向第三方公开、透露用户个人信息。中科云谷对相关信息采用专业加密存储与传输方式，保障用户个人信息的安全。
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+            >6.2&nbsp;</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:150%;
+font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >你在注册帐号或使用本服务的过程中，需要提供一些必要的信息，例如：为向你提供帐号注册服务或进行用户身份识别，需要你填写手机号码。若国家法律法规或政策有特殊规定的，你需要提供真实的身份信息。若你提供的信息不完整，则无法使用本服务或在使用过程中受到限制。
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+            >6.3&nbsp;</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:150%;
+font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >中科云谷将运用各种安全技术和程序建立完善的管理制度来保护你的个人信息，以免遭受未经授权的访问、使用或披露。
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+            >6.4&nbsp;</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:150%;
+font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >未经你的同意，中科云谷不会向中科云谷以外的任何公司、组织和个人披露你的个人信息，但法律法规另有规定的除外。
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b>
+            <span
+              style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+              >七、主权利义务条款</span
+            >
+          </b>
+          <b style="mso-bidi-font-weight:normal">
+            <span
+              lang="EN-US"
+              style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            ></span>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+            >7.1&nbsp;</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:150%;
+font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >帐号使用规范
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+            >7.1.1&nbsp;</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:150%;
+font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >你在使用本服务前需要注册一个中科云谷帐号。中科云谷帐号需要通过手机号码进行验证。中科云谷有权根据用户需求或产品需要对帐号注册和绑定的方式进行变更，关于你使用帐号的具体规则，请遵守相关帐号使用协议以及中科云谷为此发布的专项规则。
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b>
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+                >7.1.2&nbsp;</span
+              >
+            </u>
+          </b>
+          <b>
+            <u>
+              <span
+                style="mso-bidi-font-size:10.5pt;
+line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+                >中科云谷帐号的所有权归中科云谷公司所有，用户完成申请注册手续后，仅获得中科云谷帐号的使用权，且该使用权仅属于初始申请注册人。同时，初始申请注册人不得赠与、借用、租用、转让或售卖中科云谷帐号或者以其他方式许可非初始申请注册人使用中科云谷帐号。非初始申请注册人不得通过受赠、继承、承租、受让或者其他任何方式使用中科云谷帐号。
+                <span lang="EN-US"></span>
+              </span>
+            </u>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b>
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+                >7.1.3&nbsp;</span
+              >
+            </u>
+          </b>
+          <b>
+            <u>
+              <span
+                style="mso-bidi-font-size:10.5pt;
+line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+                >用户有责任妥善保管注册帐户信息及帐户密码的安全，用户需要对注册帐户以及密码下的行为承担法律责任。用户同意在任何情况下不向他人透露帐户及密码信息。当在你怀疑他人在使用你的帐号时，你应立即通知中科云谷公司。</span
+              >
+            </u>
+          </b>
+          <b style="mso-bidi-font-weight:normal">
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+              ></span>
+            </u>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+            >7.2&nbsp;</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:150%;
+font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >用户注意事项
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+            >7.2.1&nbsp;</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:150%;
+font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >使用本软件过程中你理解并同意：为了向你提供有效的服务，本软件会利用你终端设备的处理器和带宽等资源。本软件使用过程中可能产生数据流量的费用，用户需自行向运营商了解相关资费信息，并自行承担相关费用。
+            <b>
+              <u>
+                <span style="color:black;mso-themecolor:text1"></span>
+                <span
+                  lang="EN-US"
+                  style="color:#548DD4;mso-themecolor:text2;mso-themetint:153"
+                ></span>
+              </u>
+            </b>
+          </span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b>
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;color:black;
+mso-themecolor:text1;mso-font-kerning:0pt"
+                >7.2.2
+              </span>
+            </u>
+          </b>
+          <b>
+            <u>
+              <span
+                style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;color:black;
+mso-themecolor:text1;mso-font-kerning:0pt"
+                >你理解并同意：本软件的某些功能或服务，基于传感器收集回传的数据。中科云谷不能保证传感器的稳定运行，也不能保证有关数据的准确性。基于这些数据所提供的服务和功能，包括但不限于提示、消息、提醒、警报、预警、预测、记录、统计和排名等服务信息及各项功能，仅供用户参考。用户需自行复核这些信息的准确性，进而采取审慎合理的措施，并自行承担由此造成的一切后果。
+              </span>
+            </u>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b>
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;color:black;
+mso-themecolor:text1;mso-font-kerning:0pt"
+                >7.2.3
+              </span>
+            </u>
+          </b>
+          <b>
+            <u>
+              <span
+                style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;color:black;
+mso-themecolor:text1;mso-font-kerning:0pt"
+                >你理解并同意：本软件的某些功能或服务，会通过互联网、移动互联网、物联网等手段对设备进行管控。这些功能或服务，会因为不同的因素，包括但不限于设备类型、设备型号、生产批次、生产工艺、网络协议、法律法规和商业合同等的不同而有所不同。与此同时，这些功能或服务将受到气候、天气、温度、湿度、辐射、电力、互联网、移动互联网、物联网、自然不可抗力等外部条件的影响和制约。用户在使用这些功能或服务时，需自行复核管控手段的有效性，进而采取审慎合理的措施，并自行承担由此造成的一切后果。
+                <span lang="EN-US"></span>
+              </span>
+            </u>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b>
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+                >7.2.4&nbsp;</span
+              >
+            </u>
+          </b>
+          <b>
+            <u>
+              <span
+                style="mso-bidi-font-size:10.5pt;
+line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+                >你理解并同意：本软件的部分功能，将基于你本人所提供的数据和/或有关权限，包括但不限于地理位置信息、设备信息、项目名称、项目起止时间、公司位置、使用设备和手机信息等。本软件将在你安装时，或其他适当的时候，要求获取这些数据和/或权限。你一经许可，表示你同意中科云谷收集这些数据和/或获取这些权限来进行合理的使用。</span
+              >
+            </u>
+          </b>
+          <b style="mso-bidi-font-weight:normal">
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+              ></span>
+            </u>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b>
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+                >7.2.5&nbsp;</span
+              >
+            </u>
+          </b>
+          <b>
+            <u>
+              <span
+                style="mso-bidi-font-size:10.5pt;
+line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+                >中科云谷不能保证向你提供的数据和信息，包括但不限于维修案例、保养规则、维修记录、配件销售记录、回款记录和资讯等内容的完整性、正确性、及时性和即时性。对于这些数据和信息，你在使用时应本着审慎的原则，并根据实际情况做出合乎常理的判断。如有疑问，应联系中科云谷的相关人员寻求确认和解答。</span
+              >
+            </u>
+          </b>
+          <b style="mso-bidi-font-weight:normal">
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+              ></span>
+            </u>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b>
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+                >7.2.6&nbsp;</span
+              >
+            </u>
+          </b>
+          <b>
+            <u>
+              <span
+                style="mso-bidi-font-size:10.5pt;
+line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+                >你理解并同意中科云谷将会尽其商业上的合理努力保障你在本软件及服务中的数据存储安全，但是，中科云谷并不能就此提供完全保证，包括但不限于以下情形：</span
+              >
+            </u>
+          </b>
+          <b style="mso-bidi-font-weight:normal">
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+              ></span>
+            </u>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b>
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+                >7.2.6.1&nbsp;</span
+              >
+            </u>
+          </b>
+          <b>
+            <u>
+              <span
+                style="mso-bidi-font-size:10.5pt;
+line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+                >中科云谷不对你在本软件及服务中相关数据的删除或储存失败负责；</span
+              >
+            </u>
+          </b>
+          <b style="mso-bidi-font-weight:normal">
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+              ></span>
+            </u>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b>
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+                >7.2.6.2&nbsp;</span
+              >
+            </u>
+          </b>
+          <b>
+            <u>
+              <span
+                style="mso-bidi-font-size:10.5pt;
+line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+                >中科云谷有权根据实际情况自行决定单个用户在本软件及服务中数据的最长储存期限，并在服务器上为其分配数据最大存储空间等。你可根据自己的需要自行备份本软件及服务中的相关数据；</span
+              >
+            </u>
+          </b>
+          <b style="mso-bidi-font-weight:normal">
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+              ></span>
+            </u>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b>
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+                >7.2.6.3&nbsp;</span
+              >
+            </u>
+          </b>
+          <b>
+            <u>
+              <span
+                style="mso-bidi-font-size:10.5pt;
+line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+                >如果你停止使用本软件及服务或服务被终止或取消，中科云谷可以从服务器上永久地删除你的数据。服务停止、终止或取消后，中科云谷没有义务向你返还任何数据。</span
+              >
+            </u>
+          </b>
+          <b style="mso-bidi-font-weight:normal">
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+              ></span>
+            </u>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b>
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+                >7.2.7&nbsp;</span
+              >
+            </u>
+          </b>
+          <b>
+            <u>
+              <span
+                style="mso-bidi-font-size:10.5pt;
+line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+                >用户在使用本软件及服务时，须自行承担如下来自中科云谷不可掌控的风险内容，包括但不限于：</span
+              >
+            </u>
+          </b>
+          <b style="mso-bidi-font-weight:normal">
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+              ></span>
+            </u>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b>
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+                >7.2.7.1&nbsp;</span
+              >
+            </u>
+          </b>
+          <b>
+            <u>
+              <span
+                style="mso-bidi-font-size:10.5pt;
+line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+                >由于不可抗拒因素可能引起的个人信息丢失、泄漏等风险；</span
+              >
+            </u>
+          </b>
+          <b style="mso-bidi-font-weight:normal">
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+              ></span>
+            </u>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b>
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+                >7.2.7.2&nbsp;</span
+              >
+            </u>
+          </b>
+          <b>
+            <u>
+              <span
+                style="mso-bidi-font-size:10.5pt;
+line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+                >用户必须选择与所安装终端设备相匹配的软件版本，否则，由于软件与终端设备型号不相匹配所导致的任何问题或损害，均由用户自行承担；</span
+              >
+            </u>
+          </b>
+          <b style="mso-bidi-font-weight:normal">
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+              ></span>
+            </u>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b>
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+                >7.2.7.3&nbsp;</span
+              >
+            </u>
+          </b>
+          <b>
+            <u>
+              <span
+                style="mso-bidi-font-size:10.5pt;
+line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+                >由于无线网络信号不稳定、无线网络带宽小等原因，所引起的登录失败、数据同步不完整、页面打开速度慢等风险。</span
+              >
+            </u>
+          </b>
+          <b style="mso-bidi-font-weight:normal">
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+              ></span>
+            </u>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <span
+            style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >八、用户行为规范
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+            >8.1&nbsp;</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:150%;
+font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >信息内容规范
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <span
+            style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >你在使用本服务时不得利用本服务从事以下行为，包括但不限于：
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p class="MsoNormal" style="line-height:150%">
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >8.1.1</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+            >发布、传送、传播、储存违反国家法律、危害国家安全统一、社会稳定、公序良俗、社会公德以及侮辱、诽谤、淫秽或含有任何性或性暗示的、暴力的内容；
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p class="MsoNormal" style="line-height:150%">
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >8.1.2</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+            >发布、传送、传播骚扰、广告信息及垃圾信息；
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p class="MsoNormal" style="line-height:150%">
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >8.1.3</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+            >其他违反法律法规、政策及公序俗、社会公德或干扰中科云谷正常运营和侵犯其他用户或第三方合法权益内容的信息。
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b
+            style="mso-bidi-font-weight:
+normal"
+          >
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:10.5pt;line-height:150%;
+font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+                >8.2&nbsp;</span
+              >
+            </u>
+          </b>
+          <b style="mso-bidi-font-weight:normal">
+            <u>
+              <span
+                style="mso-bidi-font-size:10.5pt;
+line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+                >软件使用规范
+                <span lang="EN-US"></span>
+              </span>
+            </u>
+          </b>
+        </p>
+
+        <p class="MsoNormal" style="line-height:150%">
+          <span
+            style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast"
+            >除非法律允许或中科云谷书面许可，你使用本软件过程中不得从事下列行为：
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p class="MsoNormal" style="line-height:150%">
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast"
+            >8.2.1</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:
+150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast"
+            >删除本软件及其副本上关于著作权的信息；
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p class="MsoNormal" style="line-height:150%">
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast"
+            >8.2.2</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:
+150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast"
+            >对本软件进行反向工程、反向汇编、反向编译，或者以其他方式尝试发现本软件的源代码；
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p class="MsoNormal" style="line-height:150%">
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast"
+            >8.2.3</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:
+150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast"
+            >对中科云谷拥有知识产权的内容进行使用、出租、出借、复制、修改、链接、转载、汇编、发表、出版、建立镜像站点等；
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p class="MsoNormal" style="line-height:150%">
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast"
+            >8.2.4</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:
+150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast"
+            >对本软件或者本软件运行过程中释放到任何终端内存中的数据、软件运行过程中客户端与服务器端的交互数据，以及本软件运行所必需的系统数据，进行复制、修改、增加、删除、挂接运行或创作任何衍生作品，形式包括但不限于使用插件、外挂或非中科云谷授权的第三方工具
+            <span lang="EN-US">/</span>服务接入本软件和相关系统；
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p class="MsoNormal" style="line-height:150%">
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast"
+            >8.2.5</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:
+150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast"
+            >通过修改或伪造软件运行中的指令、数据、增加、删减、变动软件的功能或运行效果，或者将用于上述用途的软件、方法进行运营或向公众传播，无论这些行为是否为商业目的；
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p class="MsoNormal" style="line-height:150%">
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast"
+            >8.2.6</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:
+150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast"
+            >通过非中科云谷开发、授权的第三方软件、插件、外挂、系统，登录或使用中科云谷软件及服务，或制作、发布、传播上述工具；
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p class="MsoNormal" style="line-height:150%">
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast"
+            >8.2.7</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:
+150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast"
+            >自行或者授权他人、第三方软件对本软件及其组件、模块、数据进行干扰；
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p class="MsoNormal" style="line-height:150%">
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast"
+            >8.2.8</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:
+150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast"
+            >其他未经中科云谷授权的行为；
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p class="MsoNormal" style="line-height:150%">
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast"
+            >8.2.9</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:
+150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast"
+            >其他违反法律法规、政策的行为。</span
+          >
+          <b style="mso-bidi-font-weight:normal">
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+              ></span>
+            </u>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+            >8.3&nbsp;</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:150%;
+font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >对自己行为负责
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b>
+            <u>
+              <span
+                style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+                >你充分了解并同意，你必须为自己使用本软件及服务的一切行为负责，你应对本服务中的内容自行加以判断，并承担因使用内容而引起的所有风险，包括因对内容的正确性、完整性或实用性的依赖而产生的风险。中科云谷无法且不会对因前述风险而导致的任何损失或损害承担责任。</span
+              >
+            </u>
+          </b>
+          <b style="mso-bidi-font-weight:normal">
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+              ></span>
+            </u>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+            >8.4&nbsp;</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:150%;
+font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >违约处理
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b>
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+                >8.4.1&nbsp;</span
+              >
+            </u>
+          </b>
+          <b>
+            <u>
+              <span
+                style="mso-bidi-font-size:10.5pt;
+line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+                >你理解并同意，中科云谷有权依合理判断对违反有关法律法规或本协议规定的行为进行处罚，对违法违规的任何用户采取适当的法律行动，并依据法律法规保存有关信息向有关部门报告等，用户应独自承担由此而产生的一切法律责任。</span
+              >
+            </u>
+          </b>
+          <b style="mso-bidi-font-weight:normal">
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+              ></span>
+            </u>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b>
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+                >8.4.2&nbsp;</span
+              >
+            </u>
+          </b>
+          <b>
+            <u>
+              <span
+                style="mso-bidi-font-size:10.5pt;
+line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+                >你理解并同意，因你违反本协议或相关服务条款的规定，导致或产生第三方主张的任何索赔、要求或损失，你应当独立承担责任；中科云谷因此遭受损失的，你也应当一并赔偿。</span
+              >
+            </u>
+          </b>
+          <b style="mso-bidi-font-weight:normal">
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+              ></span>
+            </u>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <span
+            style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt;mso-bidi-font-weight:
+bold"
+            >九、知识产权声明</span
+          >
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:10.5pt;
+line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+          ></span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+            >9.1&nbsp;</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:150%;
+font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >中科云谷是本软件的知识产权权利人。本软件的一切著作权、商标权、专利权、商业秘密等知识产权，以及与本软件相关的所有信息内容（包括但不限于文字、图片、音频、视频、图表、界面设计、版面框架、有关数据或电子文档等）均受中华人民共和国法律法规和相应的国际条约保护，中科云谷享有上述知识产权，但相关权利人依照法律规定应享有的权利除外。
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+            >9.2&nbsp;</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:150%;
+font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >未经中科云谷或相关权利人书面同意，你不得为任何商业或非商业目的自行或许可任何第三方实施、利用、转让上述知识产权。
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <span
+            style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt;mso-bidi-font-weight:
+bold"
+            >十、终端安全责任</span
+          >
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:10.5pt;
+line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+          ></span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+            >10.1&nbsp;</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:150%;
+font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >你理解并同意，本软件同大多数互联网软件一样，可能会受多种因素影响，包括但不限于用户原因、网络服务质量、社会环境等；也可能会受各种安全问题的侵扰，包括但不限于他人非法利用用户资料，进行现实中的骚扰；用户下载安装的其他软件或访问的其他网站中可能含有病毒、木马程序或其他恶意程序，威胁你的终端设备信息和数据安全，继而影响本软件的正常使用等。因此，你应加强信息安全及个人信息的保护意识，注意密码保护，以免遭受损失。
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p class="MsoNormal" style="line-height:150%">
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast"
+            >10.2</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:
+150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast"
+            >维护软件安全与正常使用是中科云谷和你的共同责任，中科云谷将按照行业标准合理审慎的采取必要的技术措施保护你的终端设备中信息和数据的安全，但是你承认和同意中科云谷并不能就此提供完全保证。
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p class="MsoNormal" style="line-height:150%">
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast"
+            >10.3</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:
+150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast"
+            >在任何情况下，你不应轻信借款、索要密码或其他涉及财产的网络信息。涉及财产操作的，请一定先核实对方身份，确认无误再进行相关操作，以免造成财产损失。</span
+          >
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;
+mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:
+minor-fareast;mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;
+mso-font-kerning:0pt"
+          ></span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b>
+            <span
+              style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+              >十一、第三方软件或技术</span
+            >
+          </b>
+          <b style="mso-bidi-font-weight:normal">
+            <span
+              lang="EN-US"
+              style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            ></span>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+            >11.1&nbsp;</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:150%;
+font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >本软件可能会使用第三方软件或技术（包括本软件可能使用的开源代码和公共领域代码等，下同），这种使用已经获得合法授权。
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+            >11.2&nbsp;</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:150%;
+font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >本软件如果使用了第三方的软件或技术，中科云谷将按照相关法规或约定，对相关的协议或其他文件，可能通过本协议附件、在本软件安装包特定文件夹中打包、或通过</span
+          >
+          <span lang="EN-US">
+            <a
+              href="http://weixin.qq.com/cgi-bin/readtemplate?uin=&amp;t=open_info_collect"
+              target="_blank"
+            >
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:10.5pt;line-height:
+150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;color:windowtext;mso-font-kerning:0pt;text-decoration:
+none;text-underline:none"
+              >
+                <span lang="EN-US">开源软件</span>
+              </span>
+            </a>
+          </span>
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+            >页面等形式进行展示，它们可能会以“软件使用许可协议”、“授权协议”、“开源代码许可证”或其他形式来表达。前述通过各种形式展现的相关协议、其他文件及网页，均是本协议不可分割的组成部分，与本协议具有同等的法律效力，你应当遵守这些要求。
+            <b>
+              <u
+                >如果你没有遵守这些要求，该第三方或者国家机关可能会对你提起诉讼、罚款或采取其他制裁措施，并要求中科云谷给予协助，你应当自行承担法律责任。</u
+              >
+            </b>
+            <b style="mso-bidi-font-weight:normal">
+              <u>
+                <span lang="EN-US"></span>
+              </u>
+            </b>
+          </span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b>
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+                >11.3&nbsp;</span
+              >
+            </u>
+          </b>
+          <b>
+            <u>
+              <span
+                style="mso-bidi-font-size:10.5pt;
+line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+                >如因本软件使用的第三方软件或技术引发的任何纠纷，应由该第三方负责解决，中科云谷不承担任何责任。中科云谷不对第三方软件或技术提供客服支持，若你需要获取支持，请与第三方联系。</span
+              >
+            </u>
+          </b>
+          <b style="mso-bidi-font-weight:normal">
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+              ></span>
+            </u>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="left"
+          style="margin-bottom:3.6pt;text-align:left;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <u>
+            <span
+              style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt;mso-bidi-font-weight:
+bold"
+              >十二、其他</span
+            >
+          </u>
+          <u>
+            <span
+              lang="EN-US"
+              style="mso-bidi-font-size:10.5pt;
+line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            ></span>
+          </u>
+        </p>
+
+        <p
+          class="MsoNormal"
+          style="margin-bottom:3.6pt;line-height:150%;mso-pagination:
+widow-orphan"
+        >
+          <u>
+            <span
+              lang="EN-US"
+              style="mso-bidi-font-size:10.5pt;line-height:
+150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+              >12.1&nbsp;</span
+            >
+          </u>
+          <b>
+            <u>
+              <span
+                style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+                >你使用本软件即视为你已阅读并同意受本协议的约束。</span
+              >
+            </u>
+          </b>
+          <b
+            style="mso-bidi-font-weight:
+normal"
+          >
+            <u>
+              <span
+                style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:
+宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:
+minor-fareast;mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;
+mso-font-kerning:0pt"
+                >中科云谷有权在必要时修改本协议条款。你可以在本软件的最新版本中查阅相关协议条款。</span
+              >
+            </u>
+          </b>
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+            >本协议条款变更后，如果你继续使用本软件，即视为你已接受修改后的协议。如果你不接受修改后的协议，应当停止使用本软件。
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          style="margin-bottom:3.6pt;line-height:150%;mso-pagination:
+widow-orphan"
+        >
+          <b>
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:10.5pt;
+line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+                >12.2&nbsp;</span
+              >
+            </u>
+          </b>
+          <b>
+            <u>
+              <span
+                style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+                >本协议签订地为中华人民共和国湖南省长沙市岳麓区。</span
+              >
+            </u>
+          </b>
+          <b
+            style="mso-bidi-font-weight:
+normal"
+          >
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:10.5pt;line-height:150%;
+font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+              ></span>
+            </u>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          style="margin-bottom:3.6pt;line-height:150%;mso-pagination:
+widow-orphan"
+        >
+          <b>
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:10.5pt;
+line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+                >12.3&nbsp;</span
+              >
+            </u>
+          </b>
+          <b>
+            <u>
+              <span
+                style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+                >本协议的成立、生效、履行、解释及纠纷解决，适用中华人民共和国大陆地区法律（不包括冲突法）。</span
+              >
+            </u>
+          </b>
+          <b style="mso-bidi-font-weight:normal">
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+              ></span>
+            </u>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          style="margin-bottom:3.6pt;line-height:150%;mso-pagination:
+widow-orphan"
+        >
+          <b>
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:10.5pt;
+line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+                >12.4&nbsp;</span
+              >
+            </u>
+          </b>
+          <b>
+            <u>
+              <span
+                style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+                >若你和中科云谷之间发生任何纠纷或争议，首先应友好协商解决；协商不成的，你同意将纠纷或争议提交本协议签订地有管辖权的人民法院管辖。</span
+              >
+            </u>
+          </b>
+          <b style="mso-bidi-font-weight:normal">
+            <u>
+              <span
+                lang="EN-US"
+                style="mso-bidi-font-size:
+10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;
+mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+              ></span>
+            </u>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          style="margin-bottom:3.6pt;line-height:150%;mso-pagination:
+widow-orphan"
+        >
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:10.5pt;line-height:
+150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >12.5&nbsp;</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+            >本协议所有条款的标题仅为阅读方便，本身并无实际涵义，不能作为本协议涵义解释的依据。
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          style="margin-bottom:3.6pt;line-height:150%;mso-pagination:
+widow-orphan"
+        >
+          <span
+            lang="EN-US"
+            style="mso-bidi-font-size:10.5pt;line-height:
+150%;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:
+宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            >12.6&nbsp;</span
+          >
+          <span
+            style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:宋体;mso-ascii-theme-font:
+minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;mso-font-kerning:
+0pt"
+            >本协议条款无论因何种原因部分无效或不可执行，其余条款仍有效，对双方具有约束力。（正文完）
+            <span lang="EN-US"></span>
+          </span>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="right"
+          style="margin-bottom:3.6pt;text-align:right;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b
+            style="mso-bidi-font-weight:
+normal"
+          >
+            <span
+              lang="EN-US"
+              style="mso-bidi-font-size:10.5pt;line-height:150%;
+font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast;
+mso-bidi-font-family:宋体;mso-font-kerning:0pt"
+            ></span>
+          </b>
+        </p>
+
+        <p
+          class="MsoNormal"
+          align="right"
+          style="margin-bottom:3.6pt;text-align:right;
+line-height:150%;mso-pagination:widow-orphan"
+        >
+          <b
+            style="mso-bidi-font-weight:
+normal"
+          >
+            <span
+              style="mso-bidi-font-size:10.5pt;line-height:150%;font-family:
+宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family:宋体;mso-fareast-theme-font:
+minor-fareast;mso-hansi-theme-font:minor-fareast;mso-bidi-font-family:宋体;
+mso-font-kerning:0pt"
+              >中科云谷科技有限公司
+              <span lang="EN-US"></span>
+            </span>
+          </b>
+        </p>
+      </div>
+    </template>
+  </zl-dialog>
+</template>
+
+<script>
+export default {
+  methods: {
+    close() {
+      this.$emit('closeDialog')
+    }
+  }
+}
+</script>
+
+<style lang="scss">
+.arreement-dialog {
+  .el-dialog {
+    height: 500px;
+    overflow: hidden;
+    .el-dialog__body {
+      padding-bottom: 30px;
+      overflow-x: hidden;
+      height: 100%;
+    }
+  }
+}
+</style>
