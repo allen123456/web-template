@@ -14,7 +14,7 @@
 │   │   ├── index.js               自动将global中的组件挂载到Vue上
 │   ├── icons
 │   │   ├── index.js               自动将svg文件夹中的svg图标引入项目
-│   │   ├── original_svg           原始svg文件夹，开发中可删除
+│   │   ├── svgo.yml               svgo优化配置文件
 │   │   └── svg                    存放用svgo优化过后的svg图标
 │   ├── main.js
 │   ├── mixins                     全局mixin存放文件夹
@@ -74,6 +74,7 @@
     -->
  .代码规则与风格：eslint+prettier
  .移动端基于vw适配
+ .使用sass编写样式
 ```
 
 ## 请求
@@ -123,17 +124,29 @@
 
 ## 依赖
 ```
- .vant            https://github.com/youzan/vant
- .vue-create-api  https://github.com/cube-ui/vue-create-api
- .crypto-js       https://github.com/brix/crypto-js
- .vconsole        https://github.com/Tencent/vConsole
- .async-validator https://github.com/yiminghe/async-validator
- .svgo            https://github.com/svg/svgo
+ .vant                             https://github.com/youzan/vant
+ .vue-create-api                   https://github.com/cube-ui/vue-create-api
+ .crypto-js                        https://github.com/brix/crypto-js
+ .vconsole                         https://github.com/Tencent/vConsole
+ .async-validator                  https://github.com/yiminghe/async-validator
+ .svgo                             https://github.com/svg/svgo
+ .axios                            https://github.com/axios/axios
+ .vue-skeleton-webpack-plugin      https://github.com/lavas-project/vue-skeleton-webpack-plugin
 ```
 
 ## Project setup
 ```
 npm install
+```
+
+### 调试假数据
+```
+npm run mock
+```
+
+### svgo (优化src/icons/svg文件下的svg图标)
+```
+npm run svgo
 ```
 
 ### Compiles and hot-reloads for development
