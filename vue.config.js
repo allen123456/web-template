@@ -26,10 +26,10 @@ const cdn = {
   build: {
     css: [],
     js: [
-      '//cdn.jsdelivr.net/npm/vue@2.6.4/dist/vue.min.js',
-      '//cdn.jsdelivr.net/npm/vue-router@3.0.1/dist/vue-router.min.js',
-      '//cdn.jsdelivr.net/npm/vuex@3.0.1/dist/vuex.min.js',
-      '//cdn.jsdelivr.net/npm/axios@0.18.0/dist/axios.min.js'
+      'https://cdn.jsdelivr.net/npm/vue@2.6.4/dist/vue.min.js',
+      'https://cdn.jsdelivr.net/npm/vue-router@3.0.1/dist/vue-router.min.js',
+      'https://cdn.jsdelivr.net/npm/vuex@3.0.1/dist/vuex.min.js',
+      'https://cdn.jsdelivr.net/npm/axios@0.18.0/dist/axios.min.js'
     ]
   }
 }
@@ -59,7 +59,9 @@ module.exports = {
     })
 
     // 配置别名
-    config.resolve.alias.set('components', resolve('src/components')).set('mixins', resolve('src/mixins'))
+    config.resolve.alias
+      .set('components', resolve('src/components'))
+      .set('mixins', resolve('src/mixins'))
 
     if (process.env.NODE_ENV === 'production') {
       // 生产环境不打包externals下的资源
