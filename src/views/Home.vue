@@ -3,6 +3,7 @@
     <div @click="handleClick">测试页</div>
     <router-link to="/about">about</router-link>
     <zv-svg-icon icon-class="drag" />
+    <el-button type="warning">警告按钮</el-button>
   </div>
 </template>
 

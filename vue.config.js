@@ -13,7 +13,9 @@ const externals = {
   vue: 'Vue',
   'vue-router': 'VueRouter',
   vuex: 'Vuex',
-  axios: 'axios'
+  axios: 'axios',
+  'element-ui': 'ELEMENT',
+  'vue-i18n': 'VueI18n'
 }
 
 const cdn = {
@@ -29,7 +31,9 @@ const cdn = {
       'https://cdn.jsdelivr.net/npm/vue@2.6.4/dist/vue.min.js',
       'https://cdn.jsdelivr.net/npm/vue-router@3.0.1/dist/vue-router.min.js',
       'https://cdn.jsdelivr.net/npm/vuex@3.0.1/dist/vuex.min.js',
-      'https://cdn.jsdelivr.net/npm/axios@0.18.0/dist/axios.min.js'
+      'https://cdn.jsdelivr.net/npm/axios@0.18.0/dist/axios.min.js',
+      'https://cdn.jsdelivr.net/npm/element-ui@2.5.4/lib/index.js',
+      'https://cdn.jsdelivr.net/npm/vue-i18n@8.8.2/dist/vue-i18n.min.js'
     ]
   }
 }

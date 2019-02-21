@@ -67,6 +67,8 @@
     */
     -->
  .代码规则与风格：eslint+prettier
+ .PC端使用栅格布局适配屏幕
+ .使用sass编写样式
 ```
 
 ## 请求
@@ -112,8 +114,14 @@
 
 ## 依赖
 ```
- .vue-create-api  https://github.com/cube-ui/vue-create-api
- .crypto-js       https://github.com/brix/crypto-js
+ .vue-create-api                   https://github.com/cube-ui/vue-create-api
+ .crypto-js                        https://github.com/brix/crypto-js
+ .element-ui                       https://github.com/ElemeFE/element
+ .nprogress                        https://github.com/rstacruz/nprogress
+ .js-cookie                        https://github.com/js-cookie/js-cookie
+ .axios                            https://github.com/axios/axios
+ .svgo                             https://github.com/svg/svgo
+ .vue-skeleton-webpack-plugin      https://github.com/lavas-project/vue-skeleton-webpack-plugin
 ```
 
 ## Project setup
