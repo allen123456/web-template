@@ -145,7 +145,7 @@ module.exports = {
         camelCase: 'only'
       },
       sass: {
-        data: `@import "@/assets/styles/color.scss";`
+        data: `@import "@/assets/styles/variables.scss";@import "@/assets/styles/mixin.scss";`
       }
     }
   }

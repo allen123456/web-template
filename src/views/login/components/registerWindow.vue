@@ -139,39 +139,28 @@
         <el-col :span="17" class="left">
           <el-checkbox v-model="haveRead"> </el-checkbox>
           {{ $t('login.readAndAgreed') }}
-          <a style="color: blue;" @click="agreementDialogShow = true"
-            >《{{ $t('login.zoomlionAgreement') }}》</a
+          <a style="color: blue;"> 《{{ $t('login.zoomlionAgreement') }}》 </a
           ><!-- $t 我已阅读并同意  中联e管家软件许可及服务协议 -->
         </el-col>
         <el-col :span="7" class="right">
           {{ $t('login.tip2') }} ,
           <!-- $t 已有账号 -->
-          <a href="javascript: void(0);" @click="changeLoginType('password')">{{
-            $t('login.goLogin')
-          }}</a
+          <a href="javascript: void(0);" @click="changeLoginType('password')">
+            {{ $t('login.goLogin') }} </a
           ><!-- $t 直接登录 -->
         </el-col>
       </el-row>
     </el-footer>
-    <!-- 修改手机号弹窗 -->
-    <agreement-dialog
-      v-if="agreementDialogShow"
-      @closeDialog="agreementDialogShow = false"
-    ></agreement-dialog>
   </el-container>
 </template>
 
 <script>
 /* eslint-disable */
 import Mixins from './mixins'
-import agreementDialog from './agreement-dialog.vue'
 import ZvProgress from '@/components/zv-progress/index'
 export default {
   mixins: [Mixins],
-  components: {
-    ZvProgress,
-    agreementDialog
-  },
+  components: { ZvProgress },
   data() {
     // 校验手机号码格式
     const validatePhone = () => {

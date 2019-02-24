@@ -2,6 +2,8 @@ export default {
   test: () => {
     return {
       data: {
+        code: '0',
+        isMultiple: 'N',
         token: '123'
       }
     }

@@ -1,11 +1,6 @@
 <template>
   <div class="login-panel">
     <div class="login-form">
-      <!-- <el-steps :active="active" finish-status="success" align-center>
-        <el-step title="验证手机"></el-step>
-        <el-step title="验证码"></el-step>
-        <el-step title="修改密码"></el-step>
-      </el-steps> -->
       <div class="steps">
         <div data-v-3f1ff088="" class="el-steps el-steps--horizontal">
           <div
@@ -96,7 +91,6 @@
         </div>
       </div>
       <div class="form-row" v-show="active == 1" style="margin-top:15px;">
-        <!-- <span class="form-title">手机号码</span> -->
         <input
           v-model.trim="model.phone"
           class="form-input"

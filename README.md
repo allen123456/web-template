@@ -15,6 +15,12 @@
  │   ├── icons
  │   │   ├── index.js               自动将svg文件夹中的svg图标引入项目
  │   │   └── svg                    存放用svg图标
+ │   ├── lang
+ │   │   ├── en-US                  英文文件存放目录
+ │   │   └── zh-CN                  中文文件存放目录
+ │   ├── layouts
+ │   │   ├── BaseLayout             基础布局组件
+ │   │   └── SimpleLayout           简单布局组件
  │   ├── main.js
  │   ├── mixins                     全局mixin存放文件夹
  │   │   └── emitter.js             自定义组件方法
@@ -30,6 +36,9 @@
  │   ├── utils
  │   │   ├── assist.js              自定义组件方法
  │   │   ├── errorLog.js            全局捕获错误方法
+ │   │   ├── bus.js                 中央事件总线bus
+ │   │   ├── auth.js                token操作
+ │   │   ├── validate.js            验证方法集合
  │   │   ├── index.js               一般工具方法
  │   │   ├── permission.js          全局路由权限控制
  │   │   └── request                封装网络请求
@@ -99,6 +108,7 @@
 ```
  .所有公共组件，用zv-包装
  .涉及到业务逻辑的组件，在封装的时候，通过mixin，将业务逻辑代码和基本组件代码区分
+ .可以抽取的布局组件，统一存放在layouts文件夹中
 ```
 
 ## 优化

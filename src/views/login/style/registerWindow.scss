@@ -9,6 +9,9 @@
   top: 50%;
   transform: translate(-50%, -50%);
   font-size: 12px;
+  .el-checkbox {
+    margin-right: 0;
+  }
 
   .header {
     font-size: $fontSize14;
@@ -32,11 +35,11 @@
           height: 50px;
           line-height: 50px;
         }
-  
+
         .el-form-item--medium .el-form-item__content {
           line-height: 50px;
         }
-  
+
         .center .el-input {
           display: flex;
           align-items: center;
@@ -55,7 +58,7 @@
           justify-content: flex-end;
         }
       }
-     
+
     }
     .el-row:last-child {
       border-bottom: none;
@@ -69,7 +72,7 @@
         align-items: center;
         justify-content: flex-end;
 
-        
+
       }
     }
     .code {
@@ -81,7 +84,7 @@
         text-align: center;
       }
       .disableSendButton {
-        color: rgb(204, 204, 204); 
+        color: rgb(204, 204, 204);
         background: #e8e9e1;
       }
     }

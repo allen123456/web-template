@@ -88,7 +88,7 @@ export default {
     padding: 0 11px;
     // margin: 0 auto;
     margin-bottom: 5px;
-    font-size: $fontSizeDefault;
+    font-size: $fontSize12;
     &.active {
       background-color: #f6f7f1;
       border: solid 1px $themeBg;

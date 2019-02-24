@@ -45,10 +45,6 @@
       </div>
 
       <div style="margin-top: 10px;height: 30px;">
-        <!-- <div style="float:left;color:#FE605E;" v-show="errMsg">
-          <svg-icon icon-class="tan" style="font-size:14px;" />
-          <span>{{ errMsg }}s</span>
-        </div> -->
         <div style="float:right">
           <a @click="changeLoginType('forget')">{{ $t('login.forgetPassword') }}</a>
         </div>
@@ -128,6 +124,7 @@ export default {
         this.$store
           .dispatch('Login', request)
           .then(data => {
+            debugger
             this.loading = false
             // Y 去选择租户 N 首页
             if (data.code === '0') {

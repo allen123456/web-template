@@ -8,6 +8,14 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="icon" href="<%= BASE_URL %>favicon.ico">
 
+  <% for (var jsFilePath of htmlWebpackPlugin.files.js) { %>
+  <link rel="preload" href="<%= jsFilePath %>" as="script">
+  <% } %>
+  <% for (var cssFilePath of htmlWebpackPlugin.files.css) { %>
+  <link rel="preload" href="<%= cssFilePath %>" as="style" onload="this.onload=null;this.rel='stylesheet';window.STYLE_READY=1;window.mountApp&&window.mountApp();">
+  <noscript><link rel="stylesheet" href="<%= cssFilePath %>"></noscript>
+  <% } %>
+
   <!-- 使用CDN加速的CSS文件，配置在vue.config.js下 -->
   <% for (var i in htmlWebpackPlugin.options.cdn&&htmlWebpackPlugin.options.cdn.css) { %>
   <link href="<%= htmlWebpackPlugin.options.cdn.css[i] %>" rel="preload" as="style">
