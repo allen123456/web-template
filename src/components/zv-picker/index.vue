@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import ZvModel from 'mixins/zv-model'
+import ZvModel from '@/mixins/zv-model'
 import ZvPopUp from '../zv-popup/index'
 export default {
   name: 'ZvPicker',

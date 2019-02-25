@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import ZvModel from 'mixins/zv-model'
+import ZvModel from '@/mixins/zv-model'
 export default {
   name: 'ZvPopUp',
   mixins: [ZvModel],
