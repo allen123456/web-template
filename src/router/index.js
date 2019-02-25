@@ -23,6 +23,10 @@ const rotuers = new Router({
   routes: routes
 })
 
+/** 2019/2/17
+ * @Author: 刘宇琳
+ * @Desc: 哈希路由时，404页面要放最后
+ */
 rotuers.addRoutes([{ path: '*', name: '404', redirect: '/404' }])
 
 export default rotuers
