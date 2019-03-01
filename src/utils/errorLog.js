@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import { updateLog } from '@/api/errorLog'
+import storage from 'good-storage'
 
 let debugConfig = {
     //项目名称
@@ -46,8 +46,8 @@ function _logReport({ type, severity, error, metaData, message }) {
   //此处可以给你的页面进行分级
   //getPageLevel();
 
-  //通过接口上传错误日志，需后台实现接口
-  updateLog({
+  //将错误信息保存，也可以上传到自己后台服务器
+  storage.set('errorLog', {
     entryName,
     scriptVersion,
     message,
