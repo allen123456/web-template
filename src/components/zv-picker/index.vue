@@ -34,9 +34,11 @@ export default {
   },
   methods: {
     handleCancel() {
+      this.currentValue = false
       this.$emit('handleCancel')
     },
     handleConfirm(value, index) {
+      this.currentValue = false
       this.$emit('handleConfirm', { value, index })
     },
     handleChange(picker, value, index) {

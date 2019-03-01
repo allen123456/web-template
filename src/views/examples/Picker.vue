@@ -31,7 +31,6 @@ export default {
   },
   methods: {
     handlePickerClick(item) {
-      this.showPicker = false
       if (item) {
         toast({ message: `当前值：${item.value}, 当前索引：${item.index}` })
       }
