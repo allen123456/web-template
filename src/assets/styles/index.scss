@@ -1,3 +1,4 @@
+
 body {
   height: 100%;
   -moz-osx-font-smoothing: grayscale;
@@ -62,11 +63,15 @@ a:hover {
   }
 }
 
-//main-container全局样式
-.app-main {
-  min-height: 100%
+.scrollbar-wrapper {
+  overflow-x: hidden !important;
+
+  .el-scrollbar__view {
+    height: 100%;
+  }
 }
 
-.app-container {
-  padding: 20px;
+.el-scrollbar__bar.is-vertical {
+  right: 0px;
 }
+

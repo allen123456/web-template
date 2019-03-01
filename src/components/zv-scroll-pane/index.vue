@@ -13,7 +13,7 @@
 const tagAndTagSpacing = 4 // tagAndTagSpacing
 
 export default {
-  name: 'ScrollPane',
+  name: 'ZvScrollPane',
   data() {
     return {
       left: 0
@@ -54,9 +54,13 @@ export default {
           nextTag.$el.offsetLeft + nextTag.$el.offsetWidth + tagAndTagSpacing
 
         // the tag's offsetLeft before of prevTag
-        const beforePrevTagOffsetLeft = prevTag.$el.offsetLeft - tagAndTagSpacing
+        const beforePrevTagOffsetLeft =
+          prevTag.$el.offsetLeft - tagAndTagSpacing
 
-        if (afterNextTagOffsetLeft > $scrollWrapper.scrollLeft + $containerWidth) {
+        if (
+          afterNextTagOffsetLeft >
+          $scrollWrapper.scrollLeft + $containerWidth
+        ) {
           $scrollWrapper.scrollLeft = afterNextTagOffsetLeft - $containerWidth
         } else if (beforePrevTagOffsetLeft < $scrollWrapper.scrollLeft) {
           $scrollWrapper.scrollLeft = beforePrevTagOffsetLeft
@@ -78,7 +82,7 @@ export default {
       bottom: 0px;
     }
     .el-scrollbar__wrap {
-      height: 44px;
+      height: 100%;
     }
   }
 }

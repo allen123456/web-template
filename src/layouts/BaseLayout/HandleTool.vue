@@ -29,7 +29,7 @@ export default {
 .handle-tool {
   width: 100%;
   height: 44px;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid $zv-e0e0e0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -37,7 +37,7 @@ export default {
   .search {
     width: 320px;
     display: flex;
-    border: 1px solid #e0e0e0;
+    border: 1px solid $zv-e0e0e0;
     border-radius: 4px;
     font-size: 12px;
     height: 32px;
@@ -53,7 +53,7 @@ export default {
         position: absolute;
         height: 16px;
         width: 1px;
-        background-color: #e0e0e0;
+        background-color: $zv-e0e0e0;
         top: 50%;
         left: 0;
         margin-top: -8px;

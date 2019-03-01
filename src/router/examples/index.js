@@ -4,13 +4,16 @@ import SimpleLayout from '@/layouts/SimpleLayout'
 export default [
   {
     path: '/',
-    redirect: '/baseLayout',
+    component: () => import('@/views/examples/Login/index')
+  },
+  {
+    path: '/baseLayout',
     component: BaseLayout,
     children: [
       {
         path: '/baseLayout',
         name: 'BaseLayout',
-        component: () => import('@/views/examples/index.vue'),
+        component: () => import('@/views/examples/Home/index.vue'),
         meta: { title: 'BaseLayout' }
       }
     ]
@@ -22,7 +25,7 @@ export default [
       {
         path: '/simpleLayout',
         name: 'SimpleLayout',
-        component: () => import('@/views/examples/Detail.vue'),
+        component: () => import('@/views/examples/Detail/index.vue'),
         meta: { title: 'SimpleLayout' }
       }
     ]

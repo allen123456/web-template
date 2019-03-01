@@ -66,6 +66,7 @@ module.exports = {
     config.resolve.alias
       .set('components', resolve('src/components'))
       .set('mixins', resolve('src/mixins'))
+      .set('layouts', resolve('src/layouts'))
 
     if (process.env.NODE_ENV === 'production') {
       // 生产环境不打包externals下的资源

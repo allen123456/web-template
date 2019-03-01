@@ -1,18 +1,18 @@
 <template>
   <div>
-    <nav-bar />
+    <navigate />
     <tool-bar />
     <app-main />
   </div>
 </template>
 
 <script>
-import NavBar from './NavBar'
+import Navigate from './Navigate'
 import AppMain from './AppMain'
 import ToolBar from './ToolBar'
 export default {
   name: 'index',
-  components: { ToolBar, AppMain, NavBar }
+  components: { ToolBar, AppMain, Navigate }
 }
 </script>
 

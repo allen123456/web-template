@@ -1,6 +1,6 @@
 <template>
   <div class="tags-view-container">
-    <scroll-pane ref="scrollPane" class="tags-view-wrapper">
+    <zv-scroll-pane ref="scrollPane" class="tags-view-wrapper">
       <router-link
         v-for="tag in visitedViews"
         ref="tag"
@@ -19,9 +19,15 @@
           @click.prevent.stop="closeSelectedTag(tag)"
         />
       </router-link>
-    </scroll-pane>
-    <ul v-show="visible" :style="{ left: left + 'px', top: top + 'px' }" class="contextmenu">
-      <li @click="refreshSelectedTag(selectedTag)">{{ $t('tagsView.refresh') }}</li>
+    </zv-scroll-pane>
+    <ul
+      v-show="visible"
+      :style="{ left: left + 'px', top: top + 'px' }"
+      class="contextmenu"
+    >
+      <li @click="refreshSelectedTag(selectedTag)">
+        {{ $t('tagsView.refresh') }}
+      </li>
       <li
         v-if="!(selectedTag.meta && selectedTag.meta.affix)"
         @click="closeSelectedTag(selectedTag)"
@@ -35,10 +41,10 @@
 </template>
 
 <script>
-import ScrollPane from '@/components/ScrollPane'
+import ZvScrollPane from '@/components/zv-scroll-pane'
 
 export default {
-  components: { ScrollPane },
+  components: { ZvScrollPane },
   data() {
     return {
       visible: false,
@@ -178,14 +184,14 @@ export default {
   height: 44px;
   width: 100%;
   background: #fff;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid $zv-e0e0e0;
   position: relative;
   &:after {
     content: '';
     position: absolute;
     height: 24px;
     width: 1px;
-    background-color: #e0e0e0;
+    background-color: $zv-e0e0e0;
     top: 50%;
     right: 0;
     margin-top: -12px;
@@ -197,7 +203,7 @@ export default {
       cursor: pointer;
       height: 32px;
       line-height: 32px;
-      border: 1px solid #e0e0e0;
+      border: 1px solid $zv-e0e0e0;
       color: #495060;
       background: #fff;
       padding: 0 8px;
@@ -215,7 +221,7 @@ export default {
       &.active {
         background-color: $mainBg;
         border-bottom: 1px solid $mainBg;
-        color: #212121;
+        color: $zv-212121;
       }
     }
   }

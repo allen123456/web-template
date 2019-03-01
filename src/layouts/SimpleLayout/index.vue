@@ -1,14 +1,41 @@
 <template>
-  <div>
-    <simple-nav-bar />
+  <div class="simple-layout">
+    <nav-bar :title="$route.meta.title">
+      <template v-slot:left>
+        <div class="left-btn" @click="goback">
+          <i class="el-icon-arrow-left" />
+          文字按钮
+        </div>
+      </template>
+    </nav-bar>
     <router-view />
   </div>
 </template>
 
 <script>
-import SimpleNavBar from './SimpleNavBar'
+import NavBar from '../NavBar'
+
 export default {
   name: 'SimpleLayout',
-  components: { SimpleNavBar }
+  components: { NavBar },
+  methods: {
+    goback() {
+      this.$router.back()
+    }
+  }
 }
 </script>
+
+<style lang="scss" scoped>
+.simple-layout {
+  .left-btn {
+    height: 44px;
+    line-height: 44px;
+    color: #fff;
+    cursor: pointer;
+    &:active {
+      color: #e2e2e2;
+    }
+  }
+}
+</style>

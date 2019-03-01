@@ -1,6 +1,8 @@
 <template>
   <div class="dashboard-container">
-    <router-link to="/simpleLayout" class="dashboard-text">去详情页</router-link>
+    <router-link to="/simpleLayout" class="dashboard-text"
+      >去详情页</router-link
+    >
   </div>
 </template>
 
