@@ -5,11 +5,11 @@
       <el-button size="small" icon="el-icon-edit">默认按钮</el-button>
       <el-button size="small" icon="el-icon-edit">默认按钮</el-button>
     </div>
-    <div class="search">
+    <div class="handle-tool__search">
       <el-input placeholder="请输入内容" v-model="input">
         <i slot="prefix" class="el-input__icon el-icon-search"></i>
       </el-input>
-      <div class="search-text">检索条件</div>
+      <div class="handle-tool__text">检索条件</div>
     </div>
   </div>
 </template>
@@ -34,16 +34,17 @@ export default {
   align-items: center;
   justify-content: space-between;
   padding: 0 10px;
-  .search {
+  &__search {
     width: 320px;
     display: flex;
     border: 1px solid $zv-e0e0e0;
     border-radius: 4px;
     font-size: 12px;
     height: 32px;
-    .search-text {
+    .handle-tool__text {
       width: 80px;
       height: 32px;
+      color: $zv-212121;
       text-align: center;
       line-height: 32px;
       position: relative;

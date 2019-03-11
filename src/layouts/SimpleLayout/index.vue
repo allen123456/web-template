@@ -2,7 +2,7 @@
   <div class="simple-layout">
     <nav-bar :title="$route.meta.title">
       <template v-slot:left>
-        <div class="left-btn" @click="goback">
+        <div class="simple-layout__btn" @click="goback">
           <i class="el-icon-arrow-left" />
           文字按钮
         </div>
@@ -28,7 +28,7 @@ export default {
 
 <style lang="scss" scoped>
 .simple-layout {
-  .left-btn {
+  &__btn {
     height: 44px;
     line-height: 44px;
     color: #fff;

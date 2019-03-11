@@ -1,7 +1,7 @@
 <template>
   <div class="zv-input">
-    <div class="zv-input-label">{{ label }}</div>
-    <div class="zv-input-content">
+    <div class="zv-input__label">{{ label }}</div>
+    <div class="zv-input__content">
       <el-input
         :type="type"
         :placeholder="placeholder"
@@ -68,10 +68,10 @@ export default {
   @include containerH44();
   box-sizing: border-box;
   border-bottom: 1px solid $zv-e0e0e0;
-  .zv-input-label {
+  .zv-input__label {
     width: 120px;
   }
-  .zv-input-content {
+  .zv-input__content {
     flex: 1;
   }
 }

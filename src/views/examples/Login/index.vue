@@ -6,8 +6,8 @@
     }"
   >
     <login-layout justify-content="flex-end">
-      <div class="login-wrapper">
-        <div class="login-title">
+      <div class="login__wrapper">
+        <div class="login__title">
           {{ hiddenForgetView ? '用户登录' : '找回密码' }}
         </div>
 
@@ -17,7 +17,9 @@
           @tab-click="handleClick"
         >
           <el-tab-pane label="用户登入" name="first">
-            <user-login @handleForget="hiddenForgetView = !hiddenForgetView" />
+            <account-password
+              @handleForget="hiddenForgetView = !hiddenForgetView"
+            />
           </el-tab-pane>
 
           <el-tab-pane label="短信登录" name="second">
@@ -34,11 +36,11 @@
 <script>
 import LoginLayout from 'layouts/LoginLayout/index'
 import ZvTabs from 'components/zv-tabs/index'
-import UserLogin from './UserLogin'
+import AccountPassword from './AccountPassword'
 import ShortMessage from './ShortMessage'
 export default {
   name: 'Login',
-  components: { ShortMessage, UserLogin, ZvTabs, LoginLayout },
+  components: { ShortMessage, AccountPassword, ZvTabs, LoginLayout },
   data() {
     return {
       activeName: 'first',
@@ -56,13 +58,13 @@ export default {
 <style lang="scss" scoped>
 .login {
   background-size: 100% 100%;
-  .login-wrapper {
+  .login__wrapper {
     box-sizing: border-box;
     padding: 0 40px;
     width: 440px;
     height: 100%;
     background-color: #fff;
-    .login-title {
+    .login__title {
       color: $zv-212121;
       font-size: 28px;
       margin: 80px 0 56px 0;

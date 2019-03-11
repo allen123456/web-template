@@ -35,7 +35,10 @@ service.interceptors.request.use(
 
     if (config.method === 'post') {
       // 设置参数拼接方式
-      if (config.data && config.headers['Content-Type'] === 'application/x-www-form-urlencoded') {
+      if (
+        config.data &&
+        config.headers['Content-Type'] === 'application/x-www-form-urlencoded'
+      ) {
         config.data = qs.stringify(config.data)
       }
     } else {

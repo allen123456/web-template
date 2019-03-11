@@ -1,22 +1,24 @@
 <template>
-  <div class="short-message">
-    <div class="input-wrapper">
+  <div class="login-short-message">
+    <div class="login-short-message__input">
       <zv-input
         label="手机号"
         placeholder="请输入您的手机号码"
         v-model="phoneNum"
       />
     </div>
-    <div class="input-wrapper">
+    <div class="login-short-message__input">
       <zv-input
         label="验证码"
         placeholder="请输入手机验证码"
         v-model="authCode"
       >
-        <zv-button type="primary">发送验证码</zv-button>
+        <zv-button type="primary">
+          {{ sendMsgTxt }}
+        </zv-button>
       </zv-input>
     </div>
-    <div class="btn-wrapper">
+    <div class="login-short-message__btn">
       <zv-button size="large" type="primary">
         {{ hiddenForgetView ? '登录' : '下一步' }}
       </zv-button>
@@ -43,18 +45,19 @@ export default {
   data() {
     return {
       phoneNum: '',
-      authCode: ''
+      authCode: '',
+      sendMsgTxt: '发送验证码'
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.short-message {
-  .input-wrapper {
+.login-short-message {
+  &__input {
     margin-top: 16px;
   }
-  .btn-wrapper {
+  &__btn {
     margin-top: 40px;
   }
 }

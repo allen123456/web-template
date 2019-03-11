@@ -1,12 +1,12 @@
 <template>
   <div class="nav-bar" :style="barStyle">
-    <div class="nav-left">
+    <div class="nav-bar-left">
       <slot name="left" />
     </div>
 
-    <div class="nav-title">{{ title }}</div>
+    <div class="nav-bar__title">{{ title }}</div>
 
-    <div class="nav-right">
+    <div class="nav-bar-right">
       <slot name="right" />
     </div>
   </div>

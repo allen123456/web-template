@@ -1,6 +1,6 @@
 <template>
-  <div class="tags-view-container">
-    <zv-scroll-pane ref="scrollPane" class="tags-view-wrapper">
+  <div class="tags-view">
+    <zv-scroll-pane ref="scrollPane" class="tags-view__wrapper">
       <router-link
         v-for="tag in visitedViews"
         ref="tag"
@@ -8,7 +8,7 @@
         :to="{ path: tag.path, query: tag.query, fullPath: tag.fullPath }"
         :key="tag.path"
         tag="span"
-        class="tags-view-item"
+        class="tags-view__item"
         @click.middle.native="closeSelectedTag(tag)"
         @contextmenu.prevent.native="openMenu(tag, $event)"
       >
@@ -23,7 +23,7 @@
     <ul
       v-show="visible"
       :style="{ left: left + 'px', top: top + 'px' }"
-      class="contextmenu"
+      class="tags-view__contextmenu"
     >
       <li @click="refreshSelectedTag(selectedTag)">
         {{ $t('tagsView.refresh') }}
@@ -180,7 +180,7 @@ export default {
 </script>
 
 <style rel="stylesheet/scss" lang="scss" scoped>
-.tags-view-container {
+.tags-view {
   height: 44px;
   width: 100%;
   background: #fff;
@@ -196,8 +196,8 @@ export default {
     right: 0;
     margin-top: -12px;
   }
-  .tags-view-wrapper {
-    .tags-view-item {
+  .tags-view__wrapper {
+    .tags-view__item {
       display: inline-block;
       position: relative;
       cursor: pointer;
@@ -225,7 +225,7 @@ export default {
       }
     }
   }
-  .contextmenu {
+  .tags-view__contextmenu {
     margin: 0;
     background: #fff;
     z-index: 100;
@@ -251,8 +251,8 @@ export default {
 
 <style rel="stylesheet/scss" lang="scss">
 //reset element css of el-icon-close
-.tags-view-wrapper {
-  .tags-view-item {
+.tags-view__wrapper {
+  .tags-view__item {
     .el-icon-close {
       width: 16px;
       height: 16px;

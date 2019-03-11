@@ -2,7 +2,7 @@
   <div class="navigate">
     <nav-bar>
       <template v-slot:left>
-        <div class="left">
+        <div class="navigate-left">
           <div>logo</div>
           <div>首页</div>
           <div>
@@ -38,7 +38,7 @@
         </div>
       </template>
       <template v-slot:right>
-        <div class="right">登录人所属角色</div>
+        <div class="navigate-right">登录人所属角色</div>
       </template>
     </nav-bar>
   </div>
@@ -54,7 +54,7 @@ export default {
 
 <style lang="scss" scoped>
 .navigate {
-  .left {
+  .navigate-left {
     display: flex;
     align-items: center;
     div {
@@ -66,7 +66,7 @@ export default {
       font-size: $fontSize12;
     }
   }
-  .right {
+  .navigate-right {
     height: 44px;
     line-height: 44px;
   }

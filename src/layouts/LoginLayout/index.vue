@@ -5,7 +5,7 @@
         <div>LOGO</div>
       </template>
     </nav-bar>
-    <div class="login-panel" :style="loginPanelStyle">
+    <div class="login-layout-panel" :style="loginPanelStyle">
       <slot />
     </div>
   </div>
@@ -40,7 +40,7 @@ export default {
 
 <style lang="scss" scoped>
 .login-layout {
-  .login-panel {
+  &-panel {
     display: flex;
   }
 }

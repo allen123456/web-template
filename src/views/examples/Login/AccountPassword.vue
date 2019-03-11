@@ -1,40 +1,47 @@
 <template>
-  <div class="user-login">
-    <div class="input-wrapper">
+  <div class="login-account-password">
+    <div class="login-account-password__input">
       <zv-input
         label="用户名称"
         placeholder="请输入您的账号"
         v-model="username"
       />
     </div>
-    <div class="input-wrapper">
+
+    <div class="login-account-password__input">
       <zv-input
         label="登录密码"
         placeholder="请输入您的登录密码"
         v-model="password"
         :type="showPassword ? 'text' : 'password'"
         :icon="showPassword ? 'see1' : 'see2'"
-        @clickIcon="clickIcon"
+        @clickIcon="showPassword = !showPassword"
       />
     </div>
-    <div class="forget-password">
+
+    <div class="login-account-password__forget">
       <zv-button type="text" @click.native="forgetPassword">忘记密码</zv-button>
     </div>
-    <div class="agreement" @click="agreement = !agreement">
+
+    <div
+      class="login-account-password__agreement"
+      @click="agreement = !agreement"
+    >
       <i
         :class="[agreement ? 'icon-color' : '', 'el-icon-circle-check-outline']"
-      ></i>
+      />
       同意"
       <span @click.stop="goUserNotes">
         用户使用协议
       </span>
       "
     </div>
-    <router-link class="btn-wrapper" to="/baseLayout">
+
+    <div class="login-account-password__btn">
       <zv-button size="large" type="primary">
         登录
       </zv-button>
-    </router-link>
+    </div>
   </div>
 </template>
 
@@ -42,7 +49,7 @@
 import ZvInput from 'components/zv-input/index'
 import ZvButton from 'components/zv-button/index'
 export default {
-  name: 'UserLogin',
+  name: 'AccountPassword',
   components: { ZvButton, ZvInput },
   data() {
     return {
@@ -65,11 +72,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.user-login {
-  .input-wrapper {
+.login-account-password {
+  &__input {
     margin-top: 16px;
   }
-  .agreement {
+  &__agreement {
     @include containerH44();
     cursor: pointer;
     .icon-color {
@@ -80,11 +87,11 @@ export default {
       border-bottom: 1px solid $zv-8b8b8b;
     }
   }
-  .forget-password {
+  &__forget {
     @include containerH44();
     @include flex($justifyContent: flex-end);
   }
-  .btn-wrapper {
+  &__btn {
     margin-top: 40px;
   }
 }

@@ -1,6 +1,6 @@
 <template>
-  <div class="dashboard-container">
-    <router-link to="/simpleLayout" class="dashboard-text"
+  <div class="dashboard">
+    <router-link to="/simpleLayout" class="dashboard__text"
       >去详情页</router-link
     >
   </div>
@@ -14,10 +14,8 @@ export default {
 
 <style rel="stylesheet/scss" lang="scss" scoped>
 .dashboard {
-  &-container {
-    margin: 30px;
-  }
-  &-text {
+  margin: 30px;
+  &__text {
     font-size: 30px;
     line-height: 46px;
   }
