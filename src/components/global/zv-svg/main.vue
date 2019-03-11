@@ -23,9 +23,9 @@ export default {
     },
     svgClass() {
       if (this.className) {
-        return 'svg-icon ' + this.className
+        return 'zv-svg-icon ' + this.className
       } else {
-        return 'svg-icon'
+        return 'zv-svg-icon'
       }
     }
   }
@@ -33,7 +33,7 @@ export default {
 </script>
 
 <style scoped>
-.svg-icon {
+.zv-svg-icon {
   width: 1em;
   height: 1em;
   vertical-align: -0.15em;

@@ -1,18 +1,16 @@
 <template>
-  <div class="errPage-container">
-    <div class="errPage-wrappar">
+  <div class="err-page">
+    <div class="err-page__wrapper">
       <div>
-        <img :src="errImg" class="err-img" />
-        <div class="err-content">
+        <img :src="errImg" class="err-page__img" />
+        <div class="err-page__content">
           <div>
             <h1>抱歉，页面没找到!</h1>
             <span>您要访问的页面暂时没有找到，如果有疑问，请联系管理员。</span>
           </div>
         </div>
       </div>
-      <!--<zl-button radius class='back-green' @click="goback">{{$t('errorPage.backToTheHomePage')}}</zl-button>-->
     </div>
-    <!--$t 回到主页  -->
   </div>
 </template>
 
@@ -29,23 +27,23 @@ export default {
 </script>
 
 <style rel="stylesheet/scss" lang="scss" scoped>
-.errPage-container {
+.err-page {
   background-color: white;
   height: 100%;
   width: 100%;
-  .errPage-wrappar {
+  &__wrapper {
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     padding: 40px 40px 50px 40px;
-    .err-img {
+    .err-page__img {
       height: 290px;
       width: 290px;
       margin: 0 10px;
     }
-    .err-content {
+    .err-page__content {
       margin-top: 25px;
       display: flex;
       flex-direction: column;
@@ -61,10 +59,6 @@ export default {
         line-height: 18px;
         font-size: 13px;
       }
-    }
-    .back-green {
-      width: 160px;
-      height: 44px;
     }
   }
 }
