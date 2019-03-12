@@ -32,7 +32,7 @@ export default {
 <style lang="scss">
 .zv-uploader {
   .example-wrapper {
-    .slot-wrapper {
+    &__slot-wrapper {
       justify-content: flex-start;
     }
   }

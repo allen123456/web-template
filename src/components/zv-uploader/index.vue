@@ -3,19 +3,19 @@
     <div
       v-for="(img, index) in images"
       :key="index"
-      class="img-wrappar"
+      class="zv-uploader__img-wrapper"
       @click="clickImg(index)"
     >
       <img v-lazy="img" width="100%" height="100%" />
       <div
-        class="delete-img"
+        class="zv-uploader__delete"
         v-if="!isDisplay"
         @click.stop.prevent="handleRemove(index)"
       >
         <zv-svg-icon icon-class="jian" />
       </div>
     </div>
-    <van-uploader v-if="!isDisplay" :after-read="onRead" class="uploader">
+    <van-uploader v-if="!isDisplay" :after-read="onRead">
       <van-icon name="plus" />
     </van-uploader>
   </div>
@@ -57,7 +57,7 @@ export default {
         showIndicators: true,
         asyncClose: true,
         onClose() {
-          this.$emit('closeImagePreview')
+          this.$emit('onCloseImagePreview')
         }
       })
     }
@@ -72,7 +72,7 @@ export default {
 .zv-uploader {
   display: flex;
   flex-wrap: wrap;
-  .img-wrappar {
+  &__img-wrapper {
     width: 86px;
     height: 86px;
     display: flex;
@@ -81,7 +81,7 @@ export default {
     position: relative;
     margin-right: 10px;
     margin-bottom: 10px;
-    .delete-img {
+    .zv-uploader__delete {
       position: absolute;
       right: -3px;
       top: -3px;

@@ -10,8 +10,8 @@
       v-model="showPicker"
       title="标题"
       :columns="['杭州', '宁波', '温州', '嘉兴', '湖州']"
-      @handleConfirm="handlePickerClick"
-      @handleCancel="handlePickerClick"
+      @confirm="handlePickerClick"
+      @cancel="handlePickerClick"
     />
   </div>
 </template>

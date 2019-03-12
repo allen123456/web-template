@@ -1,6 +1,6 @@
 <template>
   <div class="zv-textarea">
-    <div class="header van-hairline--bottom">
+    <div class="zv-textarea__header van-hairline--bottom">
       <span>{{ label }}</span>
       <van-icon v-if="rightIcon" name="info-o" />
     </div>
@@ -44,7 +44,7 @@ export default {
 
 <style lang="scss" scoped>
 .zv-textarea {
-  .header {
+  &__header {
     box-sizing: border-box;
     @include flex($justifyContent: space-between);
     height: 44px;

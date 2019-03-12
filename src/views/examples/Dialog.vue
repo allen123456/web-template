@@ -2,10 +2,10 @@
   <div>
     <zv-nav-bar title="Dialog"></zv-nav-bar>
 
-    <div class="header">
+    <div class="dialog__header">
       <span>消息提示</span>
 
-      <div class="btn-wrappar">
+      <div class="dialog__wrapper">
         <zv-button plain type="default" @click="btnClick(0)">
           消息提示
         </zv-button>
@@ -16,10 +16,10 @@
       </div>
     </div>
 
-    <div class="header">
+    <div class="dialog__header">
       <span>消息确认</span>
 
-      <div class="btn-wrappar">
+      <div class="dialog__wrapper">
         <zv-button plain type="default" @click="btnClick(2)">
           消息确认
         </zv-button>
@@ -63,7 +63,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.header {
+.dialog__header {
   padding-top: 10px;
   span {
     display: block;
@@ -71,7 +71,7 @@ export default {
     font-size: 14px;
     color: $zv-212121;
   }
-  .btn-wrappar {
+  .btn__wrapper {
     box-sizing: border-box;
     width: 100%;
     display: flex;

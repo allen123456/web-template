@@ -1,5 +1,6 @@
 <template>
   <van-field
+    class="zv-field"
     v-model="currentValue"
     :required="required"
     clearable
@@ -64,17 +65,19 @@ export default {
       this.$emit('clickRightIcon')
     },
     handleBlur() {
-      this.$emit('handleBlur')
+      this.$emit('blur')
     }
   }
 }
 </script>
 
 <style lang="scss">
-.van-cell__title {
-  color: $zv-212121;
-}
-.van-field__right-icon {
-  color: $baseColor;
+.zv-field {
+  .van-cell__title {
+    color: $zv-212121;
+  }
+  .van-field__right-icon {
+    color: $baseColor;
+  }
 }
 </style>

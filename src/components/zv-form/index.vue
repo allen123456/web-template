@@ -29,7 +29,7 @@
         :isLink="item.isLink"
         :inputAlign="item.inputAlign"
         :errorMessage="item.errorMessage"
-        @handleBlur="handleBlur(index)"
+        @blur="handleBlur(index)"
         @clickRightIcon="clickRightIcon(item)"
         :key="index"
       />

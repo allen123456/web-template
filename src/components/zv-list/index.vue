@@ -96,9 +96,9 @@ export default {
   methods: {
     handleLoad(pullAction) {
       if (pullAction === 'pullingUp' && !this.refreshing) {
-        this.$emit('handleLoad', { pullAction, callback: this.callback })
+        this.$emit('load', { pullAction, callback: this.callback })
       } else if (pullAction === 'pullingDown') {
-        this.$emit('handleLoad', { pullAction, callback: this.callback })
+        this.$emit('load', { pullAction, callback: this.callback })
       }
     },
     /** 2019/2/17

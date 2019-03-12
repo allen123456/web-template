@@ -3,9 +3,9 @@
     <zv-nav-bar title="SVG图标集" />
 
     <div class="zv-svg">
-      <div v-for="(item, index) in showSVG" :key="index" class="svg-wrappar">
+      <div v-for="(item, index) in showSVG" :key="index" class="svg__wrapper">
         <zv-svg-icon :icon-class="item" />
-        <div class="svg-title">{{ item }}</div>
+        <div class="svg__title">{{ item }}</div>
       </div>
     </div>
   </div>
@@ -33,11 +33,11 @@ export default {
 <style lang="scss" scoped>
 .zv-svg {
   @include flex;
-  .svg-wrappar {
+  .svg__wrapper {
     margin: 10px;
     text-align: center;
     width: 15%;
-    .svg-title {
+    .svg__title {
       font-size: 14px;
       margin-top: 5px;
     }

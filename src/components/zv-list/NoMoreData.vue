@@ -1,11 +1,11 @@
 <template>
   <div class="no-more-data">
-    <div class="wrappar" @click="handleClick">
+    <div class="no-more-data__wrapper" @click="handleClick">
       <zv-svg-icon
         :icon-class="iconClass"
-        class="no-more-data-img"
+        class="no-more-data__img"
       ></zv-svg-icon>
-      <span class="no-more-data-title">{{ noMoreDataTitle }}</span>
+      <span class="no-more-data__title">{{ noMoreDataTitle }}</span>
     </div>
   </div>
 </template>
@@ -39,15 +39,15 @@ export default {
   align-items: center;
   height: 100%;
   width: 100%;
-  .wrappar {
+  &__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    .no-more-data-img {
+    .no-more-data__img {
       color: $zv-8b8b8b;
       font-size: 66px;
     }
-    .no-more-data-title {
+    .no-more-data__title {
       color: $zv-8b8b8b;
       font-size: 14px;
       margin-top: 10px;

@@ -35,14 +35,14 @@ export default {
   methods: {
     handleCancel() {
       this.currentValue = false
-      this.$emit('handleCancel')
+      this.$emit('cancel')
     },
     handleConfirm(value, index) {
       this.currentValue = false
-      this.$emit('handleConfirm', { value, index })
+      this.$emit('confirm', { value, index })
     },
     handleChange(picker, value, index) {
-      this.$emit('handleChange', { picker, value, index })
+      this.$emit('change', { picker, value, index })
     }
   }
 }

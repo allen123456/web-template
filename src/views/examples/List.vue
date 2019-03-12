@@ -5,8 +5,8 @@
     <zv-tabs v-model="active">
       <zv-tab v-for="(title, index) in tabs" :title="title" :key="index">
         <zv-list
-          class="list-wrappar"
-          @handleLoad="onLoad"
+          class="list__wrapper"
+          @load="onLoad"
           :data-source="index === 0 ? list : noMoreData"
         >
           <template v-slot="{ dataSource }">
@@ -65,7 +65,7 @@ export default {
 .list {
   height: calc(100vh);
   overflow: hidden;
-  .list-wrappar {
+  .list__wrapper {
     height: calc(100vh - 88px);
   }
 }

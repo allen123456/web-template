@@ -7,10 +7,10 @@
 */
 -->
 <template>
-  <div class="example-wrapper">
+  <div class="example__wrapper">
     <span>{{ title }}</span>
 
-    <div class="slot-wrapper">
+    <div class="example__slot-wrapper">
       <slot />
     </div>
   </div>
@@ -29,7 +29,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.example-wrapper {
+.example__wrapper {
   padding-top: 10px;
   span {
     display: block;
@@ -37,8 +37,8 @@ export default {
     font-size: 14px;
     color: $zv-212121;
   }
-  .slot-wrapper {
-    @include flex;
+  .example__slot-wrapper {
+    @include flex();
     box-sizing: border-box;
     width: 100%;
     padding: 5px;
