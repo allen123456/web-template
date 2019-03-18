@@ -25,20 +25,8 @@ Vue.use(Vant)
 
 Vue.config.productionTip = false
 
-const app = new Vue({
+new Vue({
   store,
   router,
   render: h => h(App)
-})
-
-/** 2019/2/22
- * @Author: 刘宇琳
- * @Desc: 骨架屏优化。如果 JS 晚于 CSS 加载完成，那直接执行渲染
- */
-if (process.env.NODE_ENV === 'production') {
-  if (window.STYLE_READY) {
-    app.$mount('#app')
-  }
-} else {
-  app.$mount('#app')
-}
+}).$mount('#app')
