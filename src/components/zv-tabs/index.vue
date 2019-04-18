@@ -23,10 +23,10 @@ export default {
 <style lang="scss">
 .zv-tabs {
   .van-tab {
-    color: $zv-8b8b8b;
+    color: $sub-font-color;
   }
   .van-tab--active {
-    color: $zv-212121;
+    color: $base-font-color;
     font-weight: normal;
   }
   .van-tabs__line {

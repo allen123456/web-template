@@ -44,11 +44,11 @@ export default {
     flex-direction: column;
     align-items: center;
     .no-more-data__img {
-      color: $zv-8b8b8b;
+      color: $sub-font-color;
       font-size: 66px;
     }
     .no-more-data__title {
-      color: $zv-8b8b8b;
+      color: $sub-font-color;
       font-size: 14px;
       margin-top: 10px;
     }

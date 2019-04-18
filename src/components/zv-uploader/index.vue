@@ -91,7 +91,7 @@ export default {
   .van-icon {
     font-size: 28px;
     width: 86px;
-    color: $zv-c7c7c7;
+    color: $minor-font-color;
     line-height: 86px;
     text-align: center;
     border: 1px solid #f5f5f5;

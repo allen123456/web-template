@@ -74,7 +74,7 @@ export default {
 <style lang="scss">
 .zv-field {
   .van-cell__title {
-    color: $zv-212121;
+    color: $base-font-color;
   }
   .van-field__right-icon {
     color: $baseColor;

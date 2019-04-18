@@ -49,7 +49,7 @@ export default {
     @include flex($justifyContent: space-between);
     height: 44px;
     margin: 0 15px;
-    color: $zv-212121;
+    color: $base-font-color;
     span {
       font-size: 14px;
     }
@@ -59,7 +59,7 @@ export default {
   }
   .van-hairline--bottom {
     &:after {
-      border-color: $zv-e0e0e0;
+      border-color: $border-color;
     }
   }
 }

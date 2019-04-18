@@ -61,7 +61,7 @@ export default {
     @include btn-color;
   }
   .van-button--default {
-    @include btn-color(#fafafa, $zv-e0e0e0);
+    @include btn-color(#fafafa, $border-color);
   }
   .van-button--warning {
     @include btn-color(#e53935, #e53935);
@@ -84,7 +84,7 @@ export default {
     color: $baseColor;
   }
   .van-button--plain.van-button--default {
-    border-color: $zv-e0e0e0;
+    border-color: $border-color;
   }
 
   .van-button--large {

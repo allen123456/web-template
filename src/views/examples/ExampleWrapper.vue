@@ -35,7 +35,7 @@ export default {
     display: block;
     padding-left: 10px;
     font-size: 14px;
-    color: $zv-212121;
+    color: $base-font-color;
   }
   .example__slot-wrapper {
     @include flex();

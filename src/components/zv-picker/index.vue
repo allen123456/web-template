@@ -51,7 +51,7 @@ export default {
 <style lang="scss">
 .zv-picker {
   .van-picker__cancel {
-    color: $zv-8b8b8b;
+    color: $sub-font-color;
   }
   .van-picker__confirm {
     color: $baseColor;

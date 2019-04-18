@@ -171,7 +171,7 @@ module.exports = {
         camelCase: 'only'
       },
       sass: {
-        data: `@import "@/assets/styles/zv-color.scss";@import "@/assets/styles/mixin.scss";@import "@/assets/styles/vant.scss";`
+        data: `@import "@/assets/styles/variables.scss";@import "@/assets/styles/mixin.scss";@import "@/assets/styles/vant.scss";`
       }
     }
   }
