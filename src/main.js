@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import 'normalize.css/normalize.css'
-import Vant from 'vant'
-import 'vant/lib/index.css'
+import './plugins/vant'
 import App from './App.vue'
 import router from './router'
 import store from './store'
@@ -20,8 +19,6 @@ if (process.env.NODE_ENV !== 'production') {
   let VConsole = require('vconsole/dist/vconsole.min')
   new VConsole()
 }
-
-Vue.use(Vant)
 
 Vue.config.productionTip = false
 
