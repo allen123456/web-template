@@ -184,14 +184,14 @@ export default {
   height: 44px;
   width: 100%;
   background: #fff;
-  border-bottom: 1px solid $zv-e0e0e0;
+  border-bottom: 1px solid $border-color;
   position: relative;
   &:after {
     content: '';
     position: absolute;
     height: 24px;
     width: 1px;
-    background-color: $zv-e0e0e0;
+    background-color: $border-color;
     top: 50%;
     right: 0;
     margin-top: -12px;
@@ -203,7 +203,7 @@ export default {
       cursor: pointer;
       height: 32px;
       line-height: 32px;
-      border: 1px solid $zv-e0e0e0;
+      border: 1px solid $border-color;
       color: #495060;
       background: #fff;
       padding: 0 8px;
@@ -221,7 +221,7 @@ export default {
       &.active {
         background-color: $mainBg;
         border-bottom: 1px solid $mainBg;
-        color: $zv-212121;
+        color: $base-font-color;
       }
     }
   }

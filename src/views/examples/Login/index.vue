@@ -65,7 +65,7 @@ export default {
     height: 100%;
     background-color: #fff;
     .login__title {
-      color: $zv-212121;
+      color: $base-font-color;
       font-size: 28px;
       margin: 80px 0 56px 0;
     }

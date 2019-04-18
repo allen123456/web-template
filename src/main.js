@@ -1,7 +1,5 @@
 import Vue from 'vue'
 import 'normalize.css/normalize.css'
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
 import App from './App.vue'
 import router from './router'
 import store from './store'
@@ -11,11 +9,7 @@ import './utils/permission'
 import './utils/errorLog'
 import './components/index'
 import './assets/styles/index.scss'
-
-Vue.use(ElementUI, {
-  size: 'medium', // set element-ui default size
-  i18n: (key, value) => i18n.t(key, value)
-})
+import './plugins'
 
 // 通过 npm run mock 启用mock数据
 if (process.env.NODE_ENV === 'mock') {

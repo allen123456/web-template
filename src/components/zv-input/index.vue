@@ -67,7 +67,7 @@ export default {
   @include flex();
   @include containerH44();
   box-sizing: border-box;
-  border-bottom: 1px solid $zv-e0e0e0;
+  border-bottom: 1px solid $border-color;
   .zv-input__label {
     width: 120px;
   }
@@ -82,7 +82,7 @@ export default {
   .el-input__inner {
     padding: 0;
     border-width: 0;
-    color: $zv-8b8b8b;
+    color: $sub-font-color;
   }
   .zv-input__inner {
     .el-input__inner {

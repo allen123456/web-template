@@ -55,6 +55,6 @@ export default {
   height: 44px;
   width: 100%;
   padding: 0 16px;
-  font-size: $fontSize12;
+  font-size: $base-font-size;
 }
 </style>

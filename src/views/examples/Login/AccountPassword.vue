@@ -83,8 +83,8 @@ export default {
       color: $base-color;
     }
     span {
-      color: $zv-212121;
-      border-bottom: 1px solid $zv-8b8b8b;
+      color: $base-font-color;
+      border-bottom: 1px solid $sub-font-color;
     }
   }
   &__forget {

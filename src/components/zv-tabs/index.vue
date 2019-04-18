@@ -24,14 +24,14 @@ export default {
     margin-bottom: 28px;
   }
   .el-tabs__item {
-    @include containerH44($color: $zv-8b8b8b, $width: false);
+    @include containerH44($color: $sub-font-color, $width: false);
   }
   .el-tabs__item.is-active {
-    color: $zv-212121;
+    color: $base-font-color;
     font-size: $fontSize14;
   }
   .el-tabs__nav-wrap::after {
-    background-color: $zv-eeeeee;
+    background-color: $background-color;
   }
   .el-tabs__active-bar {
     background-color: $base-color;

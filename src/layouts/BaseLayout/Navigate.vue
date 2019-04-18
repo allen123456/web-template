@@ -63,7 +63,7 @@ export default {
       text-align: center;
       height: 44px;
       line-height: 44px;
-      font-size: $fontSize12;
+      font-size: $base-font-size;
     }
   }
   .navigate-right {

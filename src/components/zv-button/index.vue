@@ -48,7 +48,7 @@ export default {
   }
   .el-button--text {
     color: $base-color;
-    font-size: $fontSize12;
+    font-size: $base-font-size;
     border-bottom: 1px solid $base-color;
     padding: 0;
     border-radius: 0;
