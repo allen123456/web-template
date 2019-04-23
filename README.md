@@ -104,7 +104,6 @@
     /* 这是 css 注释内容 */
 
   .代码规则与风格：eslint+prettier
-  .移动端基于vw适配
   .使用sass编写样式,css风格遵循bem规范
 ```
 
